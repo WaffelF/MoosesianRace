@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+    <defName>WFF_Ball_Rakali</defName>
+    <label>rakali ball</label>
+    <graphicData>
+      <texPath>Projectile/MS_Cannonball_6oz</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+	  <armorPenetrationBase>0.416</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="MSGunBaseMedieval">
+    <defName>WFF_Rakali</defName>
+    <label>rakali</label>
+    <description>A Moosesian smoothbore flintlock pistol, it fires the same caliber as the rifles, albeit very inaccurately, but easier to reload, an ideal self defense weapon.
+	
+	Easy to produce and even easier to carry around, Rakali saw its usage by all sort of combat and logistics personnel.
+	
+[Anyone can use this.]</description>
+    <graphicData>
+      <texPath>Weapon/WFF_Rakali</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+	  <MarketValue>200</MarketValue>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.05</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>MSR_MusketCraft</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WFF_Ball_Rakali</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>34.9</range>
+        <soundCast>Rakali</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<weaponTags>
+	  <li>MSW_Civilian_Ranged</li>
+	  <li>MSW_Civilian</li>
+	  <li>MSW_Officer</li>
+    </weaponTags>
+  </ThingDef>
+</Defs>

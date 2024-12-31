@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+    <defName>WFF_Ball_Dieselwork</defName>
+    <label>diesel ball</label>
+    <graphicData>
+      <texPath>Projectile/MS_Cannonball_6oz</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="MSGunBaseMedieval">
+    <defName>WFF_Dieselwork</defName>
+    <label>dieselwork</label>
+    <description>A rather short barrel musket used by all sort of Moosesian combatants. Cheap, reliable and a true infantry weapon.
+	
+	'Short barrel' is a myth, Dieselwork is just as long as other musket variants, it is the Moosesian being so tall that made them seem short in comparison. And despite being made with bayonet lug, Moosesian never seem to use it.
+	
+[Only Moosesian can use this.]</description>
+    <graphicData>
+      <texPath>Weapon/WFF_Dieselwork</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+	  <MarketValue>500</MarketValue>
+      <Mass>10</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <costList>
+      <Steel>160</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+      <researchPrerequisite>MSR_MusketCraft</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WFF_Ball_Dieselwork</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>44.9</range>
+        <soundCast>Dieselwork</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>bayonet</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+	  <li>MSW_Dieselwork</li>
+    </weaponTags>
+  </ThingDef>
+</Defs>

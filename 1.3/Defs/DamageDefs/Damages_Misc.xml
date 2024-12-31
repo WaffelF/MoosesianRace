@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DamageDef ParentName="Bomb">
+		<defName>WFF_BombBlackpowderGrenade</defName>
+		<defaultDamage>60</defaultDamage>
+		<defaultStoppingPower>2.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.50</defaultArmorPenetration>
+	</DamageDef>
+	
+	<DamageDef ParentName="Bomb">
+		<defName>WFF_BombBLGShell</defName>
+		<defaultDamage>120</defaultDamage>
+		<defaultStoppingPower>6</defaultStoppingPower>
+		<defaultArmorPenetration>2.25</defaultArmorPenetration>
+	</DamageDef>
+	
+	<!--Vanilla "Bullet" damage def isn't a parent, this was made as a substitute-->
+	<DamageDef Name="WFF_BreachBullet">
+		<defName>WFF_BreachBullet_Base</defName>
+		<label>bullet</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<hediff>Gunshot</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+
+		<buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>1.00</buildingDamageFactorImpassable>
+		<plantDamageFactor>1</plantDamageFactor>
+	</DamageDef>
+	
+	<!--Custom damage def for small caliber guns, effective against doors and weak structures-->
+	<DamageDef ParentName="WFF_BreachBullet">
+		<defName>WFF_BreachBullet_S</defName>
+		<armorCategory>Blunt</armorCategory>
+
+		<buildingDamageFactorPassable>2.5</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>1</buildingDamageFactorImpassable>
+		<plantDamageFactor>1</plantDamageFactor>
+	</DamageDef>
+	<!--Custom damage def for medium caliber guns, good all around at breaching structures-->
+	<DamageDef ParentName="WFF_BreachBullet">
+		<defName>WFF_BreachBullet_M</defName>
+		<armorCategory>Blunt</armorCategory>
+
+		<buildingDamageFactorPassable>3.5</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>3.5</buildingDamageFactorImpassable>
+		<plantDamageFactor>3.5</plantDamageFactor>
+	</DamageDef>
+	<!--Custom damage def for large caliber guns or cannonball type projectile-->
+	<DamageDef ParentName="WFF_BreachBullet">
+		<defName>WFF_BreachBullet_L</defName>
+		<armorCategory>Blunt</armorCategory>
+
+		<buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>5.00</buildingDamageFactorImpassable>
+		<plantDamageFactor>5</plantDamageFactor>
+	</DamageDef>
+</Defs>

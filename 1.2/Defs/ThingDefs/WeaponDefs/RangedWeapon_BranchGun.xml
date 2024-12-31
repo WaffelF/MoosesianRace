@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+    <defName>WFF_Bullet_BranchGun</defName>
+    <label>branch super slug</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>90</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+	  <armorPenetrationBase>1.00</armorPenetrationBase>
+      <speed>97</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="MSGunBaseImperial">
+    <defName>WFF_BranchGun</defName>
+    <label>branchlever</label>
+    <description>Portable assault gun with size as that of tree branch, a standard arms for the Guards. Firing a low-velocity high-mass shell capable of destroying enemy fortification and penetrating most armor. The main breech need to be toggled open in order to taking out spent casing or loading a new shell, this can be done by pulling the the front lever underneath the barrel.
+	
+	During the midst of chaos on the smoke-filled battleground, it is hard to differentiate twixt the sound of distant artillery fire and these large guns, more often than not the men would flee the battle mistaking themselves targeted by artillery.
+	
+[Only Moosesian can use this.]</description>
+    <graphicData>
+      <texPath>Weapon/WFF_BranchGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>13000</WorkToMake>
+	  <MarketValue>900</MarketValue>
+      <Mass>15</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <costList>
+      <Steel>180</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+      <researchPrerequisites>
+		<li>MSR_RifledFirearms</li>
+		<li>MSR_GuardPath</li>
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WFF_Bullet_BranchGun</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>54.9</range>
+        <soundCast>Metalbuss</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

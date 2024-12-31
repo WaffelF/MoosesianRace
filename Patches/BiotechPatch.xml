@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/LifeStageDef[defName="MoosesianElder"]/bodySizeFactor</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/LifeStageDef[defName="MoosesianElder"]/bodyDrawOffset</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/LifeStageDef[defName="MoosesianElder"]/headSizeFactor</xpath>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+</Patch>

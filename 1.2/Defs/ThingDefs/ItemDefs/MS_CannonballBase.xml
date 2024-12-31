@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<ThingDef Name="MSCannonBallBase" ParentName="ResourceBase" Abstract="True">
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>25</stackLimit>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+		  <MaxHitPoints>500</MaxHitPoints>
+		  <MarketValue>55</MarketValue>
+		  <Mass>5</Mass>
+		  <Flammability>0</Flammability>
+		  <DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <workAmount>400</workAmount>
+		  <targetCountAdjustment>5</targetCountAdjustment>
+		  <workSkill>Crafting</workSkill>
+		  <recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		  </recipeUsers>
+		</recipeMaker>
+		
+		<thingCategories>
+		  <li>MS_Cannonballs</li>
+		</thingCategories>
+		<tradeTags>
+		  <li>MS_Cannonballs</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--12pdr-->
+	
+	<ThingDef ParentName="MSCannonBallBase">
+		<defName>MS_Cannonball_12pdr_Roundshot</defName>
+		<label>cannonball round shot</label>
+		<description>A round solid ball made of metal, very heavy but immensely durable.</description>
+		<graphicData>
+		  <texPath>Cannonballs</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<projectileWhenLoaded>MS_Cannonball_12pdr_RoundshotBullet</projectileWhenLoaded>
+		<costList>
+		  <Steel>15</Steel>
+		</costList>
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>4</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>MSR_ArtilleryCraft</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+  <!--
+	<ThingDef ParentName="MSCannonBallBase">
+		<defName>MS_Cannonball_12pdr_Caseshot</defName>
+		<label>cannonball canister shot</label>
+		<description>A canister full of small lead bullets, also known as canister shot. it is meant to be exploded near its target, blasting the unfortunated lot with deadly hail of leads.</description>
+		<graphicData>
+		  <texPath>Cannonballs</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<projectileWhenLoaded>MS_Cannonball_12pdr_CaseshotBullet</projectileWhenLoaded>
+		<costList>
+		  <Steel>30</Steel>
+		  <Chemfuel>20</Chemfuel>
+		</costList>
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>8</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>MSR_ArtilleryCraft</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	-->
+	<!--BULLET-->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>MS_Cannonball_12pdr_RoundshotBullet</defName>
+		<label>cannonball round shot</label>
+		<graphicData>
+			<texPath>Projectile/MS_Cannonball_12pdr</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>5.4</Mass>
+		</statBases>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>500</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>100</speed> 
+		</projectile>
+	</ThingDef>
+	<!--
+	<ThingDef ParentName="BaseBullet">
+		<defName>MS_Cannonball_12pdr_CaseshotBullet</defName>
+		<label>cannonball canister shot</label>
+		<graphicData>
+			<texPath>Projectile/MS_Cannonball_12pdr</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>BombBlackpowderMortar</damageDef>
+			<explosionRadius>2.1</explosionRadius>
+			<explosionDelay>0</explosionDelay>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<speed>100</speed> 
+		</projectile>
+	</ThingDef>
+	-->
+</Defs>

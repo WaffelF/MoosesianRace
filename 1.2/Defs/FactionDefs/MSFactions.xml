@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="MS_PlayerFactionBase">
+	<isPlayer>true</isPlayer>
+    <settlementTexturePath>Icon/MS_ColonyIcon</settlementTexturePath>
+    <colorSpectrum>
+      <li>(0.55, 0.37, 0.23)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  
+  <!-- PLAYER FACTION -->
+  <FactionDef ParentName="MS_PlayerFactionBase">
+    <defName>MS_PlayerFaction</defName>
+    <label>New Beginning</label>
+    <description>A group of Moosesians, each from various backgrounds and social classes, either by the will of fate or mere circumstance, have found themselves living together on this world.</description>
+    <basicMemberKind>MS_Colonist</basicMemberKind>
+    <pawnSingular>Moosesian</pawnSingular>
+    <pawnsPlural>Mooses</pawnsPlural>
+    <techLevel>Medieval</techLevel>
+    <backstoryCategories>
+      <li>MSBS_ALL</li>
+    </backstoryCategories>
+    <factionIconPath>Icon/MS_FactionIcon</factionIconPath>
+	<!--pawnNameMaker became part of CultureDef from 1.3+-->
+    <pawnNameMaker>NamerPersonMoosesian</pawnNameMaker>
+	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionMoosesian</factionNameMaker>
+	<settlementNameMaker>NamerSettlementMoosesian</settlementNameMaker>
+
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>MSHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+		<stuffCategoriesToAllow>
+			<li>Metallic</li>
+			<li>Fabric</li>
+			<li>Leathery</li>
+			<li>Woody</li>
+		</stuffCategoriesToAllow>
+	</apparelStuffFilter>
+  </FactionDef>
+
+  
+  
+  <!-- NPC FACTION BASE -->
+	<FactionDef ParentName="HumanFactionBase" Name="MoosesianFactionBase" Abstract="True">
+		<pawnSingular>Moosesian</pawnSingular>
+		<pawnsPlural>Mooses</pawnsPlural>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		
+		<allowedArrivalTemperatureRange>
+			<min>-40</min>
+			<max>60</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+	</FactionDef>
+  
+  <!-- NPC FACTION: THE ARMY -->
+	<FactionDef ParentName="MoosesianFactionBase">
+		<defName>MooseTribe</defName>
+		<label>Moosesian Warband</label>
+		<description>The Moosesians used to be one standing faction, but ages of infighting has brought them down into various warbands.</description>
+		<colorSpectrum>
+			<li>(0.35, 0.23, 0.19)</li>
+			<li>(0.6, 0, 0)</li>
+		</colorSpectrum>
+		<startingGoodwill>
+		  <min>-40</min>
+		  <max>40</max>
+		</startingGoodwill>
+		<naturalColonyGoodwill>
+		  <min>-80</min>
+		  <max>80</max>
+		</naturalColonyGoodwill>
+		<listOrderPriority>30</listOrderPriority>
+		<leaderTitle>general</leaderTitle>
+
+		<pawnNameMaker>NamerPersonMoosesian</pawnNameMaker>
+		<factionIconPath>Icon/MS_FactionIcon</factionIconPath>
+		<settlementTexturePath>Icon/MS_ColonyIcon</settlementTexturePath>
+		<factionNameMaker>NamerFactionMoosesian</factionNameMaker>
+		<settlementNameMaker>NamerSettlementMoosesian</settlementNameMaker>
+
+		<techLevel>Medieval</techLevel>
+		<backstoryCategories>
+			<li>MSBS_ALL</li>
+		</backstoryCategories>
+		<geneticVariance>1</geneticVariance>
+		<hairTags>
+			<li>MSHair</li>
+		</hairTags>
+		<caravanTraderKinds>
+			<li>Caravan_MooseTribe_BulkGoods</li>
+			<li>Caravan_MooseTribe_CombatSupplier</li>
+			<li>Caravan_MooseTribe_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		
+	<!-- GROUP MAKER -->
+	
+	<!-- Combat Group -->
+	
+	<pawnGroupMakers>
+		<!-- Line Infantry Charge -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>60</commonality>
+			<options>
+			  <MS_Warrior_Officer>1</MS_Warrior_Officer>
+			  <MS_Warrior_Line>12</MS_Warrior_Line>
+			  <MS_Vanguard_Light>3</MS_Vanguard_Light>
+			  <MS_Vanguard_Sapper>1</MS_Vanguard_Sapper>
+			  <MS_Infirmier_Medic>2</MS_Infirmier_Medic>
+			</options> 
+		</li>
+		<!-- Light Infantry Attack -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>25</commonality>
+			<disallowedStrategies>
+			  <li>Siege</li>
+			</disallowedStrategies>
+			<options>
+			  <MS_Vanguard_Officer>1</MS_Vanguard_Officer>
+			  <MS_Vanguard_Light>6</MS_Vanguard_Light>
+			  <MS_Vanguard_Skirmisher>3</MS_Vanguard_Skirmisher>
+			  <MS_Infirmier_Medic>1</MS_Infirmier_Medic>
+			</options> 
+		</li>
+		<!-- The Guard Attack -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>10</commonality>
+			<options>
+				<MS_Guard_Officer>2</MS_Guard_Officer>
+				<MS_Guard_Grenadier>12</MS_Guard_Grenadier>
+				<MS_Guard_Sapper>6</MS_Guard_Sapper>
+				<MS_Infirmier_Surgeon>1</MS_Infirmier_Surgeon>
+			</options> 
+		</li>
+		<!-- General Led Assault -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>5</commonality>
+			<options>
+				<MS_General>1</MS_General>
+				<MS_Guard_Officer>1</MS_Guard_Officer>
+				<MS_Guard_Old>4</MS_Guard_Old>
+				<MS_Guard_Grenadier>6</MS_Guard_Grenadier>
+				<MS_Vanguard_Officer>2</MS_Vanguard_Officer>
+				<MS_Vanguard_Light>12</MS_Vanguard_Light>
+				<MS_Infirmier_Surgeon>1</MS_Infirmier_Surgeon>
+			</options>
+		</li>
+	  
+
+	  
+    <!-- Peaceful NPC Group -->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+				  <MS_General>1</MS_General>
+				  <MS_Guard_Officer>1</MS_Guard_Officer>
+				  <MS_Guard_Old>3</MS_Guard_Old>
+				  <MS_Guard_Grenadier>6</MS_Guard_Grenadier>
+				  <MS_Vanguard_Elite>2</MS_Vanguard_Elite>
+				  <MS_Vanguard_Officer>1</MS_Vanguard_Officer>
+				  <MS_Vanguard_Skirmisher>3</MS_Vanguard_Skirmisher>
+				  <MS_Vanguard_Light>6</MS_Vanguard_Light>
+				  <MS_Warrior_Officer>1</MS_Warrior_Officer>
+				  <MS_Warrior_Line>12</MS_Warrior_Line>
+				  <MS_Infirmier_Surgeon>1</MS_Infirmier_Surgeon>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+				  <MS_General>1</MS_General>
+				  <MS_Guard_Officer>2</MS_Guard_Officer>
+				  <MS_Guard_Old>6</MS_Guard_Old>
+				  <MS_Guard_Grenadier>12</MS_Guard_Grenadier>
+				  <MS_Vanguard_Officer>2</MS_Vanguard_Officer>
+				  <MS_Vanguard_Light>12</MS_Vanguard_Light>
+				  <MS_Vanguard_Skirmisher>6</MS_Vanguard_Skirmisher>
+				  <MS_Infirmier_Surgeon>1</MS_Infirmier_Surgeon>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+				  <MS_Farmer>1</MS_Farmer>
+				</traders>
+				<carriers>
+				  <Muffalo>6</Muffalo>
+				</carriers>
+				<guards>
+				  <MS_Vagabond>5</MS_Vagabond>
+				  <MS_Longman>5</MS_Longman>
+				</guards> 
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+  
+</Defs>

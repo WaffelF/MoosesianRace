@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseWeapon">
+    <defName>WFF_Conductor_Wand</defName>
+    <label>conductor wand</label>
+    <description>A conductor wand used by an elite Moosesian conductor of the past, since the ancient age, the conductor serve as backbone of Moosesian miltary, for their signal that is casted in the air could turn the otherwise savage Moosesian warband into an iron discliplined army.
+	
+	A smart Moosesian is rare to come by, one that has psychic affinity is even rarer, they are generally despised due to how the society respect individual strength rather than some 'weird magic'.
+	
+[Anyone can use this.]</description>
+    <graphicData>
+      <texPath>Weapon/WFF_Conductor_Wand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <tradeTags>
+      <li>PsychicWeapon</li>
+    </tradeTags>
+    <costStuffCount>80</costStuffCount>
+	<recipeMaker>
+	  <recipeUsers>
+		<li>FueledSmithy</li>
+		<li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>MSR_ConductorPath</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+	  <WorkToMake>20000</WorkToMake>
+      <MarketValue>2000</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Normal</minQualityForArtistic>
+      </li>
+	  <li Class="CompProperties_BiocodableWeapon"/>
+    </comps>
+	<smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <equippedStatOffsets>
+      <PsychicSensitivityOffset>0.2</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+	<stuffCategories>
+      <li>Metallic</li>
+	  <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>point</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>MS_WeaponsMelee</li>
+    </thingCategories>
+	<weaponTags Inherit="False">
+	  <li>MSW_ALL</li>
+    </weaponTags>
+  </ThingDef>
+
+</Defs>

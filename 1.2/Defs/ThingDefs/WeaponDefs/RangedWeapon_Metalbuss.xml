@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+    <defName>WFF_Ball_Metalbuss</defName>
+    <label>metalbuss ball</label>
+    <graphicData>
+      <texPath>Projectile/MS_Cannonball_6pdr</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>60</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="MSGunBaseMedieval">
+    <defName>WFF_Metalbuss</defName>
+    <label>metalbuss</label>
+    <description>An early predecessor of all Moosesian firearms, crudely made in imitation of a more sophisticated weapon their enemy uses, essentially a hand cannon, the sheer size of ammunition will punch through even the thickest of plate armor.
+	
+	It got its namesake from Blunderbuss, the first gunpowder weapon which was used against them, and the amount of raw metal used which were then casted into shape of small cannon.
+	
+[Only Moosesian can use this.]</description>
+    <graphicData>
+      <texPath>Weapon/WFF_Metalbuss</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+	  <MarketValue>450</MarketValue>
+      <Mass>20</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+      <researchPrerequisite>MSR_AntiqueGunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WFF_Ball_Metalbuss</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>54.9</range>
+        <soundCast>Metalbuss</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<weaponTags>
+	  <li>MSW_Longarm</li>
+    </weaponTags>
+  </ThingDef>
+</Defs>

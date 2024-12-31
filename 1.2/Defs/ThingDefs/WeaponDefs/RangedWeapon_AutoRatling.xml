@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- USE ALOUIS RIFLE'S PROECTILE INSTEAD
+	<ThingDef ParentName="BaseBullet">
+    <defName>WFF_Bullet_AutoRatling</defName>
+    <label>20mm autorat bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+	  <stoppingPower>3.6</stoppingPower>
+	  <armorPenetrationBase>1.5</armorPenetrationBase>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+  -->
+  <ThingDef ParentName="MSGunBaseDiesel">
+    <defName>WFF_AutoRatling</defName>
+    <label>autorat cannon</label>
+    <description>A scaled-up and upgraded iteration of the Ratling gun. This magazine-fed autocannon fires a large barrage of high-velocity leads which empty the entire box of magazine in a few seconds. It is too heavy to be hip-fired and thus can only be operated while stationary. Ideal against large armored target, it could shoot down flying creatures as well, though poor accuracy leaves much to be desired.
+	
+	Auto-Ratling cannon or 'Autorat' in short, contrary to its namesake and imported predecessor, is a unique design invented entirely by Moosesian's own craftsmanship, using the original gun only as a source of idea and inspiration. Whilst the Ratling gun main purpose is to suppress its targets, Autorat is made to directly engage fortified enemy positions.
+	
+[Only Moosesian can use this.]</description>
+    <graphicData>
+      <texPath>Weapon/WFF_AutoRatling</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+	  <MarketValue>1150</MarketValue>
+      <Mass>15</Mass>
+      <AccuracyTouch>0.15</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>8.6</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+      <researchPrerequisite>MSR_Breechloader</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WFF_Bullet_AlouisRifle</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>49.9</range>
+		<burstShotCount>15</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>AlouisRifle</soundCast>
+        <soundCastTail>AlouisRifle_Tail</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

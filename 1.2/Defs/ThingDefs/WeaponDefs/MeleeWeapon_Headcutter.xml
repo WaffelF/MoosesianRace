@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>WFF_Headcutter</defName>
+    <label>headchop</label>
+    <description>A large, weighty axe forged out of raw metals, favored by woodworkers for chopping down trees and logs alike. It is used in the military as a sapper's main tool to break down wooden fortifications, or to split head open in a brawl.
+	
+	In the times of eld, this type of axes was once a headsman's best friend, but it should be noted that a Moosesian headsman does not execute, but rather retrieving a body part from those who already deceased, which will be kept as a keepsake by their respective family. Normally this practice should be perform by the head of family, but not everyone could handle the sight of their love one, this is where the headsman came in.
+	
+[Only Moosesian can use this.]</description>
+    <graphicData>
+      <texPath>Weapon/WFF_Headcutter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>100</costStuffCount>
+	<recipeMaker>
+	  <recipeUsers>
+		<li>FueledSmithy</li>
+		<li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>MSR_AntiqueBladesmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+	  <MarketValue>450</MarketValue>
+      <Mass>10</Mass>
+    </statBases>
+    <equippedAngleOffset>0</equippedAngleOffset>
+	<equippedStatOffsets>
+		<PlantWorkSpeed>0.25</PlantWorkSpeed>
+	</equippedStatOffsets>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>MS_WeaponsMelee</li>
+    </thingCategories>
+	<weaponTags Inherit="False">
+	  <li>MSW_ALL</li>
+	  <li>MSW_Knight</li>
+	  <li>MSW_Seeker</li>
+      <li>MSW_Breacher</li>
+    </weaponTags>
+  </ThingDef>
+</Defs>

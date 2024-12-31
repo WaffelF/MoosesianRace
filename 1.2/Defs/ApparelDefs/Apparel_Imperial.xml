@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MS_HatSmithing">
+		<defName>WFF_GeneralPickhat</defName>
+		<label>General helmet</label>
+		<description>A pick helmet that was made for highest ranking leader, well ornated and giving as much protection as you could get from steel and fibers
+		
+		It was mainly a ceremonial item since most commander often stay behind rather than leading the troops, but this is a complete opposite for Moosesian culture.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>MSR_GeneralPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_GeneralPickhat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>50</Cloth>
+		  <Steel>100</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>FullHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_GeneralPickhat</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_General</li>
+			<li>RoyalTier6</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+  
+    <ThingDef ParentName="MS_HatSmithing">
+		<defName>WFF_VanguardPickhat</defName>
+		<label>Vanguard pickhat</label>
+		<description>A pick helmet made for the Vanguard, giving sufficient protection while keeping it lightweight. it also offer various environmental protection.
+		
+		The vanguard often act as a scout for the main warriors troops, and are expected to be always combat ready regardless of their place or situation, the design of this helmet is a testament to such creed.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>MSR_VanguardPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_VanguardPickhat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>50</Cloth>
+		  <Steel>80</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>FullHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_VanguardPickhat</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Vanguard</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+  
+</Defs>

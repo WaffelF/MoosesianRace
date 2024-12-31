@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+    <defName>WFF_Pellet_Firehorn</defName>
+    <label>firehorn pellet</label>
+    <graphicData>
+      <texPath>Projectile/MS_Cannonball_69cal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.17</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="MSGunBaseMedieval">
+    <defName>WFF_Firehorn</defName>
+    <label>firehorn</label>
+    <description>A simple firearm featuring a large bore barrel with a flared muzzle tip, once primed, it can be loaded with various sizes of ammunition and improvised objects for as long as they can fit. Due to its well-known issue with projectile spread at farther distance, it is best suited for close range engagement.
+	
+	When Moosesian first witnessed the power of firearms, they saw a strange shaped war horn that, not only making thunderous sound, but also shoot out hails of fire and steel, and thus Firehorn got its name.
+	
+[Only Moosesian can use this.]</description>
+    <graphicData>
+      <texPath>Weapon/WFF_Firehorn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+	  <MarketValue>450</MarketValue>
+      <Mass>7</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.05</AccuracyLong>
+      <RangedWeapon_Cooldown>2.95</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+      <researchPrerequisite>MSR_MusketCraft</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WFF_Pellet_Firehorn</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>14.9</range>
+		<burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <soundCast>Dieselwork</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+	  <li>MSW_Civilian_Ranged</li>
+	  <li>MSW_Civilian</li>
+    </weaponTags>
+  </ThingDef>
+</Defs>

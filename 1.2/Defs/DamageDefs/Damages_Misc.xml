@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DamageDef ParentName="Bomb">
+		<defName>WFF_BombBlackpowderGrenade</defName>
+		<defaultDamage>60</defaultDamage>
+		<defaultStoppingPower>2.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.50</defaultArmorPenetration>
+	</DamageDef>
+
+	<DamageDef ParentName="Bomb">
+		<defName>WFF_BombBLGShell</defName>
+		<defaultDamage>120</defaultDamage>
+		<defaultStoppingPower>6</defaultStoppingPower>
+		<defaultArmorPenetration>2.25</defaultArmorPenetration>
+	</DamageDef>
+</Defs>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MS_ApparelSmithing">
+		<defName>WFF_Ironhide</defName>
+		<label>Ironhide</label>
+		<description>A suit of plate armor made to fit Moosesian bodies, thick enough to reliably stop small projectiles yet lightweight enough to allow its wearer to move unhindered, troublesome to shoot at range, and fearsome to face in melee.
+
+	Although the Moosesians native to the ancestral woods know well the concept of metallurgy, the technology required to craft sophisticated pieces of armor such as this was imported from the Moosesian diaspora dwelling in the distant plains.</description>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_Ironhide</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>240</costStuffCount>
+		<statBases>
+		  <MaxHitPoints>350</MaxHitPoints>
+		  <WorkToMake>40000</WorkToMake>
+		  <Mass>20</Mass>
+		  <Flammability>0</Flammability>
+		  <StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>2.0</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>15</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_Ironhide</wornGraphicPath>
+		  <layers>
+			<li>Middle</li>
+			<li>Shell</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_PlateArmor</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_HatSmithing">
+		<defName>WFF_Ironhelm</defName>
+		<label>Ironhelm</label>
+		<description>A weighty helmet with horizontal visor slits that offers visibility to the wearer while providing protection. Whilst worn, a glimmer of reflection from the wearer's eyes can be seen through the slits, creating a menacing presence for their enemies.
+		
+	Plain dwellers, also known as Flatlanders, are a small faction of Moosesians living far away from their ancestral home. In the early ages, they were the most technologically advanced of their kind, with armor made of pure steel, a strong cavalry tradition and excellent archery. However, the extent of their power and influence was limited by their small number and nomadic life.</description>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_Ironhelm</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>2</Mass>
+			<Flammability>0</Flammability>
+			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>FullHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_Ironhelm</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_PlateArmor</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+  
+</Defs>
