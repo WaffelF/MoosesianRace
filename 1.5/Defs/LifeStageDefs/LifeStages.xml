@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Child body-->
+  <LifeStageDef ParentName="HumanlikeAdolescent">
+    <defName>MoosesianBaby</defName>
+    <label>baby</label>
+	
+	<hairStyleFilter Inherit="False">
+    </hairStyleFilter>
+	
+	<!--BODYSIZEFACTOR affect head offset as well, why Tynan?-->
+	<!--bodysize 0.2->0.125 -->
+    <bodySizeFactor>0.125</bodySizeFactor>
+	<!--BODYWIDTH affect head drawsize as well, why Tynan?-->
+	<!--Scaling body sprite down so their body can fit swaddle because the thing won't scale, why Tynan?-->
+    <bodyWidth>0.85</bodyWidth>
+    <bodyDrawOffset>(0, 0, -0.03)</bodyDrawOffset>
+    <voxPitch>1.6</voxPitch>
+	<!--Affects  BOTH hair and head drawsize-->
+    <headSizeFactor>0.5</headSizeFactor>
+    <eyeSizeFactor>0.7</eyeSizeFactor>
+    <foodMaxFactor>0.625</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.125 -->
+    <hungerRateFactor>0.125</hungerRateFactor> <!-- consumes 2x maxFood per day -->
+    <healthScaleFactor>0.2</healthScaleFactor>
+    <marketValueFactor>0.5</marketValueFactor>
+    <meleeDamageFactor>0.5</meleeDamageFactor>
+    <developmentalStage>Baby</developmentalStage>
+    <fallAsleepMaxThresholdOverride>.60</fallAsleepMaxThresholdOverride>
+    <naturalWakeThresholdOverride>1.0</naturalWakeThresholdOverride>
+    <alwaysDowned>true</alwaysDowned>
+    <claimable>true</claimable>
+    <involuntarySleepIsNegativeEvent>false</involuntarySleepIsNegativeEvent> <!-- Babies just fall asleep randomly and they're cool with it. -->
+    <thinkTreeMainOverride MayRequire="Ludeon.RimWorld.Biotech">HumanlikeBaby</thinkTreeMainOverride>
+    <thinkTreeConstantOverride MayRequire="Ludeon.RimWorld.Biotech">HumanlikeBabyConstant</thinkTreeConstantOverride>
+    <canDoRandomMentalBreaks>false</canDoRandomMentalBreaks> <!-- Babies have crying/giggling fits instead of mental breaks. -->
+    <canSleepWhileHeld>true</canSleepWhileHeld>
+    <canVoluntarilySleep>false</canVoluntarilySleep> <!-- Babies fall asleep randomly when they're tired. -->
+    <canSleepWhenStarving>false</canSleepWhenStarving>
+    <canInitiateSocialInteraction>false</canInitiateSocialInteraction>
+    <customMoodTipString>Mood represents how happy or stressed someone is. Babies with low mood are more likely to cry, while babies with a high mood are more likely to giggle.</customMoodTipString>
+    <silhouetteGraphicData>
+      <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanBaby</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </silhouetteGraphicData>
+	<statFactors>
+      <MoveSpeed>0.2</MoveSpeed>
+    </statFactors>
+    <statOffsets>
+      <ComfyTemperatureMin>-46</ComfyTemperatureMin><!--should map to -30C-->
+      <ComfyTemperatureMax>4</ComfyTemperatureMax><!--should map to 30C-->
+    </statOffsets>
+    <involuntarySleepMTBDaysFromRest>
+      <points>
+        <li>(.00, 0)</li>
+        <li>(.01, .01)</li>
+        <li>(.15, .166)</li>
+        <li>(.30, 1)</li>
+        <li>(.59, 10)</li>
+        <li>(.60, Infinity)</li>
+      </points>
+    </involuntarySleepMTBDaysFromRest>
+  </LifeStageDef>
+  
+  <LifeStageDef ParentName="LifeStageHumanlikeChild">
+    <defName>MoosesianChild</defName>
+    <label>child</label>
+    <bodyDrawOffset>(0, 0, -0.05)</bodyDrawOffset>
+    <headSizeFactor>0.65</headSizeFactor>
+  </LifeStageDef>
+  
+  <LifeStageDef ParentName="LifeStageHumanlikeChild">
+    <defName>MoosesianPreTeenager</defName>
+    <label>preteen</label>
+    <bodySizeFactor>0.6</bodySizeFactor>
+	<bodyWidth>1.25</bodyWidth>
+	<bodyDrawOffset>(0, 0, 0)</bodyDrawOffset>
+	<headSizeFactor>0.7</headSizeFactor>
+    <healthScaleFactor>0.7</healthScaleFactor>
+    <foodMaxFactor>1.552</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.9 -->
+    <hungerRateFactor>0.9</hungerRateFactor>
+    <marketValueFactor>0.95</marketValueFactor>
+    <meleeDamageFactor>0.725</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.85</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef ParentName="HumanlikeAdolescent">
+    <defName>MoosesianTeenager</defName>
+    <label>teenager</label>
+    <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass>
+    <adjective>teenage</adjective>
+    <reproductive>true</reproductive>
+    <bodySizeFactor>0.8</bodySizeFactor>
+	<bodyWidth>1.3</bodyWidth>
+	<bodyDrawOffset>(0, 0, 0.31)</bodyDrawOffset>
+	<headSizeFactor>0.92</headSizeFactor>
+    <healthScaleFactor>0.90</healthScaleFactor>
+    <foodMaxFactor>1.25</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 1.0 -->
+    <meleeDamageFactor>0.9</meleeDamageFactor>
+    <equipmentDrawDistanceFactor>0.55</equipmentDrawDistanceFactor>
+    <sittingOffset>0.23</sittingOffset>
+	<silhouetteGraphicData>
+      <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </silhouetteGraphicData>
+    <statFactors>
+      <MoveSpeed>0.95</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef>
+    <defName>MoosesianAdult</defName>
+    <label>adult</label>
+	<bodyDrawOffset>(0, 0, 0.45)</bodyDrawOffset>
+    <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+    <sittingOffset>0.18</sittingOffset>
+	<silhouetteGraphicData>
+      <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </silhouetteGraphicData>
+	<equipmentDrawDistanceFactor>0.4</equipmentDrawDistanceFactor>
+  </LifeStageDef>
+  
+  <LifeStageDef>
+    <defName>MoosesianElder</defName>
+    <label>elder</label>
+	<bodySizeFactor>1.25</bodySizeFactor>
+	<bodyWidth>1.7</bodyWidth>
+    <bodyDrawOffset>(0, 0, 0.6)</bodyDrawOffset>
+	<headSizeFactor>1.15</headSizeFactor>
+	<healthScaleFactor>1.2</healthScaleFactor>
+    <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass>
+	<visible>false</visible>
+    <reproductive>true</reproductive>
+    <sittingOffset>0.18</sittingOffset>
+	<silhouetteGraphicData>
+      <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </silhouetteGraphicData>
+	<meleeDamageFactor>1.25</meleeDamageFactor>
+	<equipmentDrawDistanceFactor>0.4</equipmentDrawDistanceFactor>
+  </LifeStageDef>
+</Defs>

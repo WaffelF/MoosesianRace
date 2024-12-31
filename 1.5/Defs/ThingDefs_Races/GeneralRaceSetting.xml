@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Moosesian</defName>
+		<label>Moosesian</label>
+		<description>A tall humanoid race known for their unique overbearing antlers, immense physical strength, and notably low agility. Moosesians are reclusive by nature and though they are commonly docile, most prefer to stick to their kin and would become agitated at the first sign of aggression. Each and every Moosesian is a member of their respective family until their coming of age when they are obliged to venture off and start their own, an average Moosesian household could range anywhere from a few dozens to almost fifty, and sometimes more. When compared to baseline humans, they possess much 'slower' intelligence which, combined with their tendency to fight among themselves, is the sole reason they have yet to dominate the rim with their sheer numbers.</description>
+		<!--Alien Racce-->
+		<alienRace>
+			<!--General-->
+			<generalSettings>
+				 <maleGenderProbability>0</maleGenderProbability>
+				 <reproduction>
+					 <femaleFertilityAgeFactor>
+						<points>
+							<li>(4, 0)</li>
+							<li>(10, 1)</li>
+							<li>(35, 1)</li>
+							<li>(55, 0.5)</li>
+							<li>(75, 0.1)</li>
+							<li>(85, 0.02)</li>
+							<li>(90, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(4, 0)</li>
+							<li>(10, 1)</li>
+							<li>(13, 1)</li>
+							<li>(50, 1)</li>
+							<li>(70, 0.75)</li>
+							<li>(80, 0.5)</li>
+							<li>(90, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+				</reproduction>
+				<growthAges>
+				  <li>5</li>
+				  <li>9</li>
+				  <li>13</li>
+				</growthAges>
+				 <immuneToAge>false</immuneToAge>
+				 <canLayDown>true</canLayDown>
+				 <forcedRaceTraitEntries>
+				 </forcedRaceTraitEntries>
+				 <disallowedTraits>
+					<li>
+						<defName>Wimp</defName>
+					</li>
+				 </disallowedTraits>
+				 <!--
+				 <additionalTraits>0</additionalTraits>
+				 -->
+				 <maxDamageForSocialfight>30</maxDamageForSocialfight>
+				 <immuneToXenophobia>false</immuneToXenophobia>
+				 <minAgeForAdulthood>13</minAgeForAdulthood>
+				 <humanRecipeImport>true</humanRecipeImport>
+				<lovinIntervalHoursFromAge>
+					<points>
+						<li>(16, 1)</li>
+						<li>(22, 1.5)</li>
+						<li>(50, 2)</li>
+						<li>(60, 6)</li>
+						<li>(80, 18)</li>
+					</points>
+				</lovinIntervalHoursFromAge>
+				 
+				 <!--Alien Part Generator-->
+				 <alienPartGenerator>
+					<borderScale>2.1</borderScale>
+					<atlasScale>4</atlasScale>
+					<headTypes>
+						<li>MS_Head1</li>
+						<li>MS_Head2</li>
+						<li>MS_Head3</li>
+						<li>MS_Head4</li>
+						<li>MS_Head5</li>
+						<li>MS_Head6</li>
+						<li>MS_Head7</li>
+						<li>MS_Head8</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<headOffset>(0.0, 0.32)</headOffset>
+					<headOffsetDirectional>
+						<east><offset>(-0.07, 0.0)</offset></east>
+						<west><offset>(0.07, 0.0)</offset></west>
+					</headOffsetDirectional>
+					<!--Draw Size-->
+					<customDrawSize>(1.4, 1.4)</customDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customPortraitDrawSize>(1.4, 1.4)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+					
+					<oldHairAgeRange>78.0~82.0</oldHairAgeRange>
+					<!--<anchorReplacements>
+					  <li>
+						<originalTag>LeftEye</originalTag>
+						<originalGroup>Torso</originalGroup>
+						<replacement>
+						  <rotation>West</rotation>
+						  <tag>LeftEye</tag>
+						  <canMirror>false</canMirror>
+						  <crownType>Narrow</crownType>
+						  <offset>(-0.12, 0, 0.26)</offset>
+						  <range>0</range>
+						  <layer>Head</layer>
+						  <debugColor>(0,0,0,1)</debugColor>
+						</replacement>
+						<offsets>
+						</offsets>
+					  </li>
+					</anchorReplacements>
+					-->
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(1.000, 1.000, 1.000, 1.000)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(1.000, 1.000, 1.000, 1.000)</only>
+									</li>
+									<!--Default Blondes-->
+									<li>
+										<weight>10</weight>
+										<only>(255, 246, 226)</only>
+									</li>
+									<!--Soft Yellow Blonde-->
+									<li>
+										<weight>10</weight>
+										<only>(255, 230, 190)</only>
+									</li>
+									<!--Yellow Blonde-->
+									<li>
+										<weight>10</weight>
+										<only>(255, 240, 180)</only>
+									</li>
+									<!--Hard Yellow Blonde-->
+									<li>
+										<weight>10</weight>
+										<only>(255, 225, 134)</only>
+									</li>
+									<!--Cherry Blondes Classic-->
+									<li>
+										<weight>10</weight>
+										<only>(230, 170, 128)</only>
+									</li>
+									<!--Cherry Blondes Light-->
+									<li>
+										<weight>10</weight>
+										<only>(230, 185, 158)</only>
+									</li>
+									<!--Blood Red-->
+									<li>
+										<weight>10</weight>
+										<only>(145, 0, 40)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					
+					<bodyAddons>
+						<!--ANTLER-->
+						<li>
+							 <path>Moosesian/Antler/MS_AntlerL</path>
+							 <inFrontOfBody>true</inFrontOfBody>
+							 <alignWithHead>true</alignWithHead>
+							 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							 <colorChannel>base</colorChannel>
+							 <conditions>
+								<BodyPart>
+									<bodyPart>MS_Antler</bodyPart>
+									<bodyPartLabel>left antler</bodyPartLabel>
+								</BodyPart>
+							 </conditions>
+							 <ageGraphics>
+								<MoosesianBaby>Moosesian/Antler/MS_AntlerNull</MoosesianBaby>
+							 </ageGraphics>
+							 <offsets>
+							   <south>
+								 <bodyTypes>
+								   <Female>(0,0)</Female>
+								   <Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.03,0)</Baby>
+								   <Child MayRequire="Ludeon.RimWorld.Biotech">(-0.03,0)</Child>
+								 </bodyTypes>
+							   </south>
+							   <north>
+								 <layerOffset>0.01</layerOffset>
+								 <bodyTypes>
+								   <Female>(0,0)</Female>
+								   <Baby MayRequire="Ludeon.RimWorld.Biotech">(0.03,0)</Baby>
+								   <Child MayRequire="Ludeon.RimWorld.Biotech">(0.03,0)</Child>
+								 </bodyTypes>
+							   </north>
+							 </offsets>
+						</li>
+						<li>
+							 <path>Moosesian/Antler/MS_AntlerR</path>
+							 <inFrontOfBody>true</inFrontOfBody>
+							 <alignWithHead>true</alignWithHead>
+							 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							 <colorChannel>base</colorChannel>
+							 <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							 <conditions>
+								<BodyPart>
+									<bodyPart>MS_Antler</bodyPart>
+									<bodyPartLabel>right antler</bodyPartLabel>
+								</BodyPart>
+							 </conditions>
+							 <ageGraphics>
+								<MoosesianBaby>Moosesian/Antler/MS_AntlerNull</MoosesianBaby>
+							 </ageGraphics>
+							 <offsets>
+							   <south>
+								 <bodyTypes>
+								   <Female>(0,0)</Female>
+								   <Baby MayRequire="Ludeon.RimWorld.Biotech">(0.03,0)</Baby>
+								   <Child MayRequire="Ludeon.RimWorld.Biotech">(0.03,0)</Child>
+								 </bodyTypes>
+							   </south>
+							   <north>
+								 <layerOffset>0.01</layerOffset>
+								 <bodyTypes>
+								   <Female>(0,0)</Female>
+								   <Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.03,0)</Baby>
+								   <Child MayRequire="Ludeon.RimWorld.Biotech">(-0.03,0)</Child>
+								 </bodyTypes>
+							   </north>
+							 </offsets>
+						</li>
+						<li>
+							 <path>Moosesian/Antler/MS_AntlerLSide</path>
+							 <alignWithHead>true</alignWithHead>
+							 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							 <colorChannel>base</colorChannel>
+							 <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							 <conditions>
+								<BodyPart>
+									<bodyPart>MS_Antler</bodyPart>
+									<bodyPartLabel>left antler</bodyPartLabel>
+								</BodyPart>
+							 </conditions>
+							 <ageGraphics>
+								<MoosesianBaby>Moosesian/Antler/MS_AntlerNull</MoosesianBaby>
+							 </ageGraphics>
+						</li>
+						<li>
+							 <path>Moosesian/Antler/MS_AntlerRSide</path>
+							 <alignWithHead>true</alignWithHead>
+							 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							 <colorChannel>base</colorChannel>
+							 <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							 <conditions>
+								<BodyPart>
+									<bodyPart>MS_Antler</bodyPart>
+									<bodyPartLabel>right antler</bodyPartLabel>
+								</BodyPart>
+							 </conditions>
+							 <ageGraphics>
+								<MoosesianBaby>Moosesian/Antler/MS_AntlerNull</MoosesianBaby>
+							 </ageGraphics>
+						</li>
+						<!--EARS: Moosesian aren't canonically supposed to have moose ears, I gave them one because I thought it's adorable-->
+						<li>
+							 <path>Moosesian/Ear/MS_EarL</path>
+							 <!--
+							 <geneRequirement>CustomGene</geneRequirement>
+							 -->
+							 <inFrontOfBody>true</inFrontOfBody>
+							 <alignWithHead>true</alignWithHead>
+							 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							 <colorChannel>base</colorChannel>
+							 <conditions>
+								<RotStage>Fresh,Rotting</RotStage>
+								<BodyPart>
+									<bodyPart>Ear</bodyPart>
+									<bodyPartLabel>left ear</bodyPartLabel>
+								</BodyPart>
+							 </conditions>
+							 <offsets>
+							   <south>
+								 <bodyTypes>
+								   <Female>(0,0)</Female>
+								   <Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.03,0)</Baby>
+								   <Child MayRequire="Ludeon.RimWorld.Biotech">(-0.03,0)</Child>
+								 </bodyTypes>
+							   </south>
+							   <north>
+								 <bodyTypes>
+								   <Female>(0,0)</Female>
+								   <Baby MayRequire="Ludeon.RimWorld.Biotech">(0.03,0)</Baby>
+								   <Child MayRequire="Ludeon.RimWorld.Biotech">(0.03,0)</Child>
+								 </bodyTypes>
+							   </north>
+							 </offsets>
+						</li>
+						<li>
+							 <path>Moosesian/Ear/MS_EarR</path>
+							 <!--
+							 <geneRequirement>CustomGene</geneRequirement>
+							 -->
+							 <inFrontOfBody>true</inFrontOfBody>
+							 <alignWithHead>true</alignWithHead>
+							 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							 <colorChannel>base</colorChannel>
+							 <conditions>
+								<RotStage>Fresh,Rotting</RotStage>
+								<BodyPart>
+									<bodyPart>Ear</bodyPart>
+									<bodyPartLabel>right ear</bodyPartLabel>
+								</BodyPart>
+							 </conditions>
+							 <offsets>
+							   <south>
+								 <bodyTypes>
+								   <Female>(0,0)</Female>
+								   <Baby MayRequire="Ludeon.RimWorld.Biotech">(0.03,0)</Baby>
+								   <Child MayRequire="Ludeon.RimWorld.Biotech">(0.03,0)</Child>
+								 </bodyTypes>
+							   </south>
+							   <north>
+								 <bodyTypes>
+								   <Female>(0,0)</Female>
+								   <Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.03,0)</Baby>
+								   <Child MayRequire="Ludeon.RimWorld.Biotech">(-0.03,0)</Child>
+								 </bodyTypes>
+							   </north>
+							 </offsets>
+						</li>
+					</bodyAddons>	
+				 </alienPartGenerator>
+			</generalSettings>
+			<!--Graphic-->
+			<graphicPaths>
+                <head>Moosesian/Heads/</head>
+                <body>Moosesian/Bodies/</body>
+                <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</skeleton>
+			</graphicPaths>
+			<!--Hair-->
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+                            <li>MSHair</li>
+                        </styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<!--Thought-->
+			<thoughtSettings>
+				 <replacerList>
+					<li>
+						<original>AteLavishMeal</original>
+						<replacer>MS_AteLavishMeal</replacer>
+					</li>
+					<li>
+						<original>AteFineMeal</original>
+						<replacer>MS_AteFineMeal</replacer>
+					</li>
+				 </replacerList>
+				 <cannotReceiveThoughtsAtAll>false</cannotReceiveThoughtsAtAll><!--Is pawn mindless and unable feel any emotion?-->
+				 <cannotReceiveThoughts><!--thought that your pawn is immune to-->
+					<li>AteWithoutTable</li>
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+				 </cannotReceiveThoughts>
+			</thoughtSettings>
+			<!--Relation-->
+			<relationSettings>
+				<relationChanceModifierLover>1</relationChanceModifierLover>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+
+				<relationChanceModifierFiance>1</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>0.2</relationChanceModifierExSpouse>
+
+				<relationChanceModifierParent>2</relationChanceModifierParent>
+				<relationChanceModifierChild>2</relationChanceModifierChild>
+				<relationChanceModifierSibling>2</relationChanceModifierSibling>
+				<renamer>
+				   <li>
+					  <relation>Parent</relation>
+					  <label>fore father</label>
+					  <femaleLabel>brood mother</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>Sibling</relation>
+					  <label>blood kin</label>
+					  <femaleLabel>blood kin</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>Grandparent</relation>
+					  <label>great fore father</label>
+					  <femaleLabel>great brood mother</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>GreatGrandparent</relation>
+					  <label>greater fore father</label>
+					  <femaleLabel>greater brood mother</femaleLabel>
+				   </li>
+				</renamer>
+			</relationSettings>
+			<!--Race Restriction-->
+			<raceRestriction>
+				<researchList>
+					<li>
+						<!--
+						<projects>
+							<li>MSR_WarriorPath</li>
+							<li>MSR_VanguardPath</li>
+							<li>MSR_GuardPath</li>
+							<li>MSR_GeneralPath</li>
+						</projects>
+						-->
+					</li>
+				</researchList>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				<apparelList>
+					<li>WFF_Ancestralwear</li>
+					<li>WFF_GeneralUniform</li>
+					<li>WFF_GuardUniform</li>
+					<li>WFF_VanguardUniform</li>
+					<li>WFF_WarriorUniform</li>
+					<li>WFF_InfirmierUniform</li>
+					<li>WFF_MSTightPants</li>
+					<li>WFF_SurgicalApron</li>
+					<li>WFF_MilitiaOutfit</li>
+					<li>WFF_FarmOveralls</li>
+					<li>WFF_CeremonialDress</li>
+					<li>WFF_Civilianwear</li>
+					<li>WFF_Ironhide</li>
+					<li>WFF_MSBra</li>
+					<li>WFF_MSPanties</li>
+					<li>WFF_MSSlaveOutfit</li>
+					<li>WFF_ChurchMaidenDress</li>
+					<!--
+					<li>WFF_CavalryCuirass</li>
+					-->
+					<li>WFF_StormtrooperCap</li>
+					<!--
+					<li>WFF_GeneralBicorne</li>
+					<li>WFF_OldGuardBearskin</li>
+					<li>WFF_GuardBearskin</li>
+					<li>WFF_SkirmishShako</li>
+					<li>WFF_VanguardShako</li>
+					<li>WFF_WarriorShako</li>
+					<li>WFF_Flowercrown</li>
+					<li>WFF_Ironhelm</li>
+					<li>WFF_GeneralPickhat</li>
+					<li>WFF_VanguardPickhat</li>
+					<li>WFF_MilitiaCap</li>
+					<li>WFF_FarmerSunhelm</li>
+					<li>WFF_FurHat</li>
+					-->
+					<!--
+					<li>WFF_CivilianBicorne</li>
+					<li>WFF_OfficerBicorne</li>
+					-->
+				</apparelList>
+				<whiteApparelList>
+					<!--Vanilla-->
+					<!--
+					<li>Apparel_AdvancedHelmet</li>
+					<li>Apparel_ArmorHelmetRecon</li>
+					<li>Apparel_BowlerHat</li>
+					<li>Apparel_CowboyHat</li>
+					<li>Apparel_PowerArmorHelmet</li>
+					<li>Apparel_PsychicFoilHelmet</li>
+					<li>Apparel_PsychicInsanityLance</li>
+					<li>Apparel_PsychicShockLance</li>
+					<li>Apparel_ShieldBelt</li>
+					<li>Apparel_SimpleHelmet</li>
+					<li>Apparel_SmokepopBelt</li>
+					<li>Apparel_TribalHeaddress</li>
+					<li>Apparel_Tuque</li>
+					<li>Apparel_WarMask</li>
+					<li>Apparel_WarVeil</li>
+					<li>OrbitalTargeterBombardment</li>
+					<li>OrbitalTargeterPowerBeam</li>
+					<li>TornadoGenerator</li>
+					-->
+					<!--Royalty-->
+					<!--
+					<li>Apparel_ArmorHelmetCataphract</li>
+					<li>Apparel_ArmorHelmetCataphractPrestige</li>
+					<li>Apparel_ArmorHelmetReconPrestige</li>
+					<li>Apparel_ArmorMarineHelmetPrestige</li>
+					<li>Apparel_Beret</li>
+					<li>Apparel_Coronet</li>
+					<li>Apparel_Crown</li>
+					<li>Apparel_CrownStellic</li>
+					<li>Apparel_EltexSkullcap</li>
+					<li>Apparel_Gunlink</li>
+					<li>Apparel_HatLadies</li>
+					<li>Apparel_HatTop</li>
+					<li>Apparel_HatHood</li>
+					<li>Apparel_PackBroadshield</li>
+					<li>Apparel_PackJump</li>
+					<li>Apparel_PsyfocusHelmet</li>
+					<li>OrbitalTargeterMechCluster</li>
+					-->
+					<!--Ideology-->
+					<!--
+					<li>Apparel_AuthorityCap</li>
+					<li>Apparel_Blindfold</li>
+					<li>Apparel_Broadwrap</li>
+					<li>Apparel_Flophat</li>
+					<li>Apparel_Headwrap</li>
+					<li>Apparel_Shadecone</li>
+					<li>Apparel_Slicecap</li>
+					<li>Apparel_Tailcap</li>
+					<li>Apparel_TortureCrown</li>
+					<li>Apparel_VisageMask</li>
+					-->
+				</whiteApparelList>
+				<weaponList>
+					<li>WFF_Manchaser</li>
+					<li>WFF_Ironheap</li>
+					<li>WFF_Headcutter</li>
+					<li>WFF_Pikebreaker</li>
+					<!--
+					<li>WFF_Conductor_Wand</li>
+					-->
+					<li>WFF_Archwood</li>
+					
+					<li>WFF_Metalbuss</li>
+					<li>WFF_Dieselwork</li>
+					<li>WFF_Dieselboiler</li>
+					<li>WFF_Firehorn</li>
+					<li>WFF_Firespitter</li>
+					
+					<li>WFF_AlouisRifle</li>
+					<li>WFF_Antlerbreaker</li>
+					<li>WFF_AutoRatling</li>
+					<li>WFF_BLG</li>
+					<li>WFF_BranchGun</li>
+					<li>WFF_Rokali</li>
+					<li>WFF_Spinner</li>
+					<li>WFF_TrunkGun</li>
+					
+					<li>WFF_Firefly</li>
+				</weaponList>
+				<blackGeneTags>
+					<li>HairStyle</li>
+					<li>Fur</li>
+					<li>BeardStyle</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>HairColor</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>BodyType</li>
+				</blackEndoCategories>
+			</raceRestriction>
+		</alienRace>
+		
+		<!--Stats base-->
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<Mass>90</Mass>
+			<MoveSpeed>6.9</MoveSpeed>
+			<MentalBreakThreshold>0.20</MentalBreakThreshold>
+			<Flammability>0.7</Flammability>
+			<ComfyTemperatureMax>21</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<CarryingCapacity>150</CarryingCapacity>
+			<PainShockThreshold>1.0</PainShockThreshold>
+			<ToxicResistance>0</ToxicResistance>
+			<ToxicEnvironmentResistance>0</ToxicEnvironmentResistance>
+			<EatingSpeed>1.1</EatingSpeed> 
+			<MeatAmount>150</MeatAmount>
+			<LeatherAmount>60</LeatherAmount>
+			<!--Combat: Harder to dodge attack in combat due to their size-->
+			<MeleeDodgeChance>0.9</MeleeDodgeChance>
+			<!--Social: How their imposing size affect social interactions-->
+			<NegotiationAbility>1.2</NegotiationAbility>
+			<ArrestSuccessChance>1.5</ArrestSuccessChance>
+			<SocialImpact>1.5</SocialImpact>
+			<!--Royalty-->
+			<RoyalFavorValue>12</RoyalFavorValue>
+			<!--General Work: How their strength affect works-->
+			<MiningSpeed>1.5</MiningSpeed>
+			<SmoothingSpeed>1.5</SmoothingSpeed>
+			<ResearchSpeed>0.7</ResearchSpeed>
+			<PlantWorkSpeed>1.25</PlantWorkSpeed>
+			<HuntingStealth>1.2</HuntingStealth>
+			<ConstructionSpeed>1.25</ConstructionSpeed>
+			<!--Recipe-->
+			<GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+		</statBases>
+		
+		<!--Tools-->
+		<tools>
+			<li>
+				<label>antlers</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Poke</def>
+							<amount>12</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Scratch</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Scratch</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		
+		<!--Race-->
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>90</lifeExpectancy>
+			<bloodDef>Filth_Blood</bloodDef>
+			<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+			<leatherDef>Leather_Light</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<hasGenders>true</hasGenders>
+			<body>Moosesian</body>
+			<renderTree>Humanlike</renderTree>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>21</gestationPeriodDays>
+			<canBecomeShambler>true</canBecomeShambler>
+			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+			<anomalyKnowledge>1</anomalyKnowledge>
+			<hasUnnaturalCorpse>true</hasUnnaturalCorpse>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 0.10)</li>
+					<li>(2, 0.25)</li>
+					<li>(3, 0.30)</li>
+					<li>(4, 0.25)</li>
+					<li>(5, 0.10)</li>
+					<li>(6, 0.0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+                    <def>MoosesianBaby</def>
+                    <headFemaleOffsetDirectional>                        
+                        <north><offset>(0.0, -0.03)</offset></north>
+                        <south><offset>(0.0, -0.03)</offset></south>
+                        <east><offset>(0.03, -0.03)</offset></east>
+                        <west><offset>(-0.03, -0.03)</offset></west>
+                    </headFemaleOffsetDirectional>
+                    <minAge>0</minAge>
+                </li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+                    <def>MoosesianChild</def>
+                    <headFemaleOffsetDirectional>                        
+                        <north><offset>(0.0, -0.01)</offset></north>
+                        <south><offset>(0.0, -0.01)</offset></south>
+                        <east><offset>(0.0, -0.01)</offset></east>
+                        <west><offset>(0.0, -0.01)</offset></west>
+                    </headFemaleOffsetDirectional>
+                    <minAge>3</minAge>
+                </li>
+				<!--Adult-->
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+                    <def>MoosesianPreTeenager</def>
+                    <headFemaleOffsetDirectional>                        
+                        <north><offset>(0.0, -0.09)</offset></north>
+                        <south><offset>(0.0, -0.09)</offset></south>
+                        <east><offset>(0.0, -0.09)</offset></east>
+                        <west><offset>(0.0, -0.09)</offset></west>
+                    </headFemaleOffsetDirectional>
+                    <minAge>6</minAge>
+                </li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+                    <def>MoosesianTeenager</def>
+                    <headFemaleOffsetDirectional>                        
+                        <north><offset>(0.0, 0)</offset></north>
+                        <south><offset>(0.0, 0)</offset></south>
+                        <east><offset>(-0.06, 0)</offset></east>
+                        <west><offset>(0.06, 0)</offset></west>
+                    </headFemaleOffsetDirectional>
+                    <minAge>13</minAge>
+                </li>
+				<li>
+					<def>MoosesianAdult</def>
+					<minAge>18</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>MoosesianElder</def>
+					<headFemaleOffsetDirectional>                        
+                        <north><offset>(0.0, 0.02)</offset></north>
+                        <south><offset>(0.0, 0.02)</offset></south>
+                        <east><offset>(-0.07, 0.02)</offset></east>
+                        <west><offset>(0.07, 0.02)</offset></west>
+                    </headFemaleOffsetDirectional>
+					<minAge>25</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(3,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>  <!-- Exclude 9.5-10 years to avoid spawning pawns who are very close to becoming adults -->  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li>(18,50)</li>
+					<li>(22,100)</li>
+					<li>(30,20)</li>
+					<li>(60,2)</li>
+					<li>(80,1)</li>
+					<li>(90,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>MoosesianNatural</li>
+			</hediffGiverSets>
+		</race>
+		
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

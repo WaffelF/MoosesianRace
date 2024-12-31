@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- FLATLAND CHILDHOOD -->
+  
+	<!-- FLATLAND LORDLING (12 skill points) -->
+	<!-- Sheltered Princess -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_LordSheltered</defName>
+		<title>sheltered princess</title>
+		<titleShort>princess</titleShort>
+		<description>[PAWN_nameDef] was born into the house of high nobility, yet unlike most of [PAWN_possessive] siblings, [PAWN_nameDef] prefers to stay indoors and enjoy [PAWN_possessive] time with friends. To compensate for [PAWN_possessive] lack of outgoingness, [PAWN_nameDef]'s parents made sure to teach [PAWN_objective] everything they could.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>-2</Construction>
+			<Mining>-2</Mining>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Cooking>4</Cooking>
+			<Crafting>4</Crafting>
+			<Artistic>4</Artistic>
+			<Social>4</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Lord</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Gluttonous Lordling -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_LordGlutton</defName>
+		<title>gluttonous lordling</title>
+		<titleShort>glutton</titleShort>
+		<description>[PAWN_nameDef] loves food, sweets, and anything that could fit in [PAWN_possessive] mouth, and there is no shortage of lavish dishes in [PAWN_possessive] court. Yet, despite [PAWN_possessive] excessive appetite, not once did the lordling let anyone doubt [PAWN_possessive] capabilities as the future lord of [PAWN_possessive] house.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>4</Melee>
+			<Cooking>2</Cooking>
+			<Social>5</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Gourmand>0</Gourmand>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Lord</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Martial Princess -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_LordMartial</defName>
+		<title>martial princess</title>
+		<titleShort>princess</titleShort>
+		<description>Among the young members of [PAWN_nameDef]'s family, [PAWN_nameDef] stands out as the most eager when it comes to martial arts training. [PAWN_pronoun] disregards social classes and is willing to spar or fight with anyone, for [PAWN_pronoun] only seeks joy in the exhilarating heat of the fight.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>6</Melee>
+			<Social>3</Social>
+		</skillGains>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<forcedTraitsChance>
+			<li>
+				<defName>Bloodlust</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Lord</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Shadowed Lordling -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_LordOvershadowed</defName>
+		<title>overshadowed lordling</title>
+		<titleShort>lordling</titleShort>
+		<description>Despite being the heir to the house, [PAWN_nameDef] is overshadowed by all of [PAWN_possessive] siblings in every aspect. Thus, [PAWN_nameDef] waited and trained, biding [PAWN_possessive] time for [PAWN_possessive] moment to come — the moment [PAWN_pronoun] could prove [PAWN_objective]self worthy to the family and the world.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>4</Melee>
+			<Social>4</Social>
+			<Cooking>4</Cooking>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Jealous</defName>
+				<chance>20</chance>
+			</li>
+			<li>
+				<defName>Tough</defName>
+				<chance>20</chance>
+			</li>
+			<li>
+				<defName>QuickSleeper</defName>
+				<chance>20</chance>
+			</li>
+			<li>
+				<defName>FastLearner</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Lord</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Dream Pursuer -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_LordAmbitious</defName>
+		<title>dream pursuer</title>
+		<titleShort>dreamer</titleShort>
+		<description>As the heir to [PAWN_possessive] noble house, [PAWN_nameDef] was promised many great things in life. [PAWN_pronoun] grew up seeing it as [PAWN_possessive] birthright to claim all that [PAWN_pronoun] wants in the world. But unlike most dreamers, [PAWN_pronoun] is willing to shed blood and sweat to realize it.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>3</Construction>
+			<Melee>3</Melee>
+			<Mining>3</Mining>
+			<Social>3</Social>
+		</skillGains>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+			<Industriousness>2</Industriousness>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Lord</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Wanderlust Princess -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_LordWanderlust</defName>
+		<title>wanderlust princess</title>
+		<titleShort>princess</titleShort>
+		<description>To the dismay of [PAWN_possessive] escorts, the young [PAWN_nameDef] possesses an unyielding desire to explore the world. Despite [PAWN_possessive] high nobility, [PAWN_nameDef] is perfectly content with being down in the mud and rain; in fact, [PAWN_pronoun] prefers it over her dusty, glittering bedroom.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>3</Melee>
+			<Cooking>3</Cooking>
+			<Plants>3</Plants>
+			<Animals>3</Animals>
+			<Social>3</Social>
+		</skillGains>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+		</forcedTraits>
+		<disallowedTraits>
+			<Undergrounder>0</Undergrounder>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Lord</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+  
+  <!-- FLATLAND ADULTHOOD -->
+  
+	<!-- FLATLAND HIGH PRIEST (30~40 skill points) -->
+	<!-- Avatar of Purity -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_HighPriest_Purity</defName>
+		<title>avatar of purity</title>
+		<titleShort>avatar</titleShort>
+		<description>[PAWN_nameDef] is an avatar of purity, a title only bestowed by the church upon those who possess an ideal Moosesian physique, the epitome of purity in both flesh and soul, as if they were crafted by the heavens themselves.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Social>20</Social>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>2</SpeedOffset>
+			<NaturalMood>2</NaturalMood>
+			<GreatMemory>0</GreatMemory>
+			<Nimble>0</Nimble>
+			<Tough>0</Tough>
+			<QuickSleeper>0</QuickSleeper>
+			<Beauty>2</Beauty>
+			<Immunity>1</Immunity>
+		</forcedTraits>
+		<disallowedTraits>
+			<Greedy>0</Greedy>
+			<Jealous>0</Jealous>
+			<Gay>0</Gay>
+			<Bisexual>0</Bisexual>
+			<Asexual>0</Asexual>
+			<AnnoyingVoice>0</AnnoyingVoice>
+			<CreepyBreathing>0</CreepyBreathing>
+			<SlowLearner>0</SlowLearner>
+			<Nerves>-2</Nerves>
+			<Neurotic>2</Neurotic>
+			<Industriousness>-2</Industriousness>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_HighPriest</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Avatar of Fertility -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_HighPriest_Fertility</defName>
+		<title>avatar of fertility</title>
+		<titleShort>avatar</titleShort>
+		<description>Widely worshipped as an avatar of fertility, [PAWN_nameDef] possesses deep knowledge and experience in the field from the years leading to [PAWN_possessive] ascension. [PAWN_pronoun] often finds [PAWN_objective]self occupied with endless requests for visit from various farm owners, who believe [PAWN_possessive] personal appearance and blessings would results in a bountiful harvest.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Plants>10</Plants>
+			<Animals>10</Animals>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+			<Beauty>2</Beauty>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_HighPriest</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Inquisitive Director -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_HighPriest_Director</defName>
+		<title>inquisitive director</title>
+		<titleShort>director</titleShort>
+		<description>[PAWN_nameDef] is best known for [PAWN_possessive] influence in the church's intelligence community. Even after [PAWN_possessive] ascension to the top leadership of the church, a looming, foreboding shadow of intrigue follows the high priestess wherever [PAWN_pronoun] goes.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>10</Melee>
+			<Social>10</Social>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<GreatMemory>0</GreatMemory>
+			<QuickSleeper>0</QuickSleeper>
+		</forcedTraits>
+		<disallowedTraits>
+			<Beauty>-2</Beauty>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_HighPriest</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Reverend Royal -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_HighPriest_Royal</defName>
+		<title>reverend royal</title>
+		<titleShort>royal</titleShort>
+		<description>The sole inheritor of an empire that never was, [PAWN_nameDef] was initially brought into service of the church in order to shield [PAWN_objective] from the ongoing civil war. [PAWN_nameDef] has clear ties to the great families of old, with a rightful claim to the symbolic imperial throne—a legitimate claim that remained unfulfilled due to circumstances and [PAWN_possessive] own desires.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>15</Shooting>
+			<Melee>15</Melee>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+			<Beauty>2</Beauty>
+			<Kind>0</Kind>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_HighPriest</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Slaying Saint -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_HighPriest_Saint</defName>
+		<title>slaying saint</title>
+		<titleShort>saint</titleShort>
+		<description>[PAWN_nameDef]'s fame precedes [PAWN_objective]. Before [PAWN_possessive] ascension to high-priesthood, [PAWN_nameDef] led multiple purging campaigns against numerous great beasts, personally defeating them. At one point, [PAWN_nameDef] was witnessed battling a colossal creature all alone. The triumph over the terrible beast ultimately led to [PAWN_possessive] canonization as one of the few living saints.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>20</Shooting>
+			<Melee>20</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Nimble>0</Nimble>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+		<disallowedTraits>
+			<Beauty>-2</Beauty>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_HighPriest</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Artistic Priestess -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_HighPriest_Artistic</defName>
+		<title>artistic priestess</title>
+		<titleShort>priestess</titleShort>
+		<description>[PAWN_nameDef] is a high priestess known for [PAWN_possessive] excellence in arts and handicrafts. While this may not seem significant to [PAWN_possessive] duty as leader of the church, [PAWN_pronoun]'s works have managed to make a great impression on many within and outside of the church.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>9</Shooting>
+			<Melee>9</Melee>
+			<Crafting>6</Crafting>
+			<Artistic>6</Artistic>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+			<Beauty>2</Beauty>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_HighPriest</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	
+	
+	<!-- FLATLAND NUNS (20 skill points) -->
+	<!-- Moonlight Lady -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_NunMoonlight</defName>
+		<title>moonlight lady</title>
+		<titleShort>lady</titleShort>
+		<description>Being assigned a night shift watch, there is nothing [PAWN_nameDef] loves more than bathing [PAWN_objective]self in the gentle radiance of the moon whilst strolling in the yard of [PAWN_possessive] monastery.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>5</Melee>
+			<Cooking>5</Cooking>
+		</skillGains>
+		<forcedTraits>
+			<NightOwl>0</NightOwl>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_Abbess</li>
+			<li>MSBS_Nun_Executioner</li>
+			<li>MSBS_Nun_Seeker</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Gatekeeper -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_NunGatekeeper</defName>
+		<title>gatekeeper</title>
+		<titleShort>gatekeeper</titleShort>
+		<description>[PAWN_nameDef] has only one task: keeping unwanted individuals from entering the gate. While [PAWN_pronoun] is not heartless, [PAWN_nameDef] is not afraid to resort to harsh words or even violence, if necessary, to ensure the safety of [PAWN_possessive] community.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>8</Melee>
+			<Social>4</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_Abbess</li>
+			<li>MSBS_Nun_Executioner</li>
+			<li>MSBS_Nun_Seeker</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Disciplinary Sister -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_NunDisciplinary</defName>
+		<title>disciplinary sister</title>
+		<titleShort>sister</titleShort>
+		<description>[PAWN_nameDef] serves as an elder sibling to the other nuns, keeping a watchful eye on them and ensuring their discipline both in time of peace and out in the field. It's important not to mistake [PAWN_possessive] nagging for genuine disapproval.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Social>8</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_Abbess</li>
+			<li>MSBS_Nun_Executioner</li>
+			<li>MSBS_Nun_Seeker</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Buckshot Addict -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_NunBuckshot</defName>
+		<title>buckshot addict</title>
+		<titleShort>shotgunner</titleShort>
+		<description>[PAWN_nameDef] spends half of [PAWN_possessive] daily life on the shooting range with [PAWN_possessive] shotgun, much to the dismay of the rangemaster. [PAWN_pronoun] performs well on the range and operates just as effectively in the field, making the daily cost of ammunition somewhat worthwhile.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>12</Shooting>
+			<Melee>4</Melee>
+			<Social>4</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_Abbess</li>
+			<li>MSBS_Nun_Executioner</li>
+			<li>MSBS_Nun_Seeker</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Rangemaster -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_NunRangemaster</defName>
+		<title>rangemaster</title>
+		<titleShort>master</titleShort>
+		<description>[PAWN_nameDef] is tasked with overseeing activities on the shooting range, teaching firearm safety to clueless initiates, maintenance of the range and management of ammunition stockpile. It can be a very a stressful role, particularly if one lives in a community of religious firearm enthusiasts.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Crafting>5</Crafting>
+			<Social>5</Social>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_Abbess</li>
+			<li>MSBS_Nun_Executioner</li>
+			<li>MSBS_Nun_Seeker</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Sermon Preacher -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_NunSermon</defName>
+		<title>sermon preacher</title>
+		<titleShort>preacher</titleShort>
+		<description>During [PAWN_possessive] spare time, [PAWN_nameDef] writes sermon scripts for others to use in their practice preaching, and at other times, [PAWN_pronoun] gives spiritual guidance to those in need. However, it's unclear whether people come to hear [PAWN_objective] preach because of the sermons or [PAWN_possessive] angelic beauty.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+			<Beauty>2</Beauty>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Nun_Abbess</li>
+			<li>MSBS_Nun_Executioner</li>
+			<li>MSBS_Nun_Seeker</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+
+
+	<!-- FLATLAND KNIGHT (20 skill points) -->
+	<!-- Night Raider -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_KnightNightRaider</defName>
+		<title>night raider</title>
+		<titleShort>raider</titleShort>
+		<description>[PAWN_nameDef] is unlike any other knight. Instead of riding out in the sun, enjoying the warm breeze of the great plain, [PAWN_nameDef] travels at night. [PAWN_pronoun] relishes the cold wind and the sea of stars as [PAWN_pronoun] picks the next settlement to get [PAWN_possessive] dinner from.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>6</Melee>
+			<Plants>7</Plants>
+			<Animals>7</Animals>
+		</skillGains>
+		<forcedTraits>
+			<NightOwl>0</NightOwl>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Master</li>
+			<li>MSBS_Knight_Lord</li>
+			<li>MSBS_Knight_Ordained</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Campaign Veteran -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_KnightCampaignVeteran</defName>
+		<title>campaign veteran</title>
+		<titleShort>veteran</titleShort>
+		<description>[PAWN_nameDef] has participated in multiple warring campaigns against various adversaries. The cumulative experience has made [PAWN_objective] somewhat desensitized to hardship and the sight of carnage; it might also have left [PAWN_objective] with wounds that may never heal.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>8</Melee>
+			<Plants>5</Plants>
+			<Animals>5</Animals>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		<forcedTraitsChance>
+			<li>
+				<options>
+				  <li>
+					<defName Degree="1">Neurotic</defName>
+				  </li>
+				  <li>
+					<defName Degree="2">Neurotic</defName>
+				  </li>
+				</options>
+				<count>1</count>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Master</li>
+			<li>MSBS_Knight_Lord</li>
+			<li>MSBS_Knight_Ordained</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Pious Chaplain -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_KnightPiousChaplain</defName>
+		<title>pious chaplain</title>
+		<titleShort>chaplain</titleShort>
+		<description>[PAWN_nameDef] is a devout knight with close affiliation with the church. [PAWN_nameDef] is sanctioned with an authority to perform as a spiritual guide for those preparing for battle, as well as for those in need of guidance afterward, living or deceased.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>10</Melee>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>2</Nerves>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Master</li>
+			<li>MSBS_Knight_Lord</li>
+			<li>MSBS_Knight_Ordained</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Knight Retriever -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_KnightRetriever</defName>
+		<title>knight retriever</title>
+		<titleShort>retriever</titleShort>
+		<description>Blessed with a pair of fast feet and even quicker hands, [PAWN_nameDef] is well known for [PAWN_possessive] role in rescuing the injured and evacuation of the vulnerable before, during, or after each and every battle.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Medicine>5</Medicine>
+			<Social>5</Social>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+		<forcedTraitsChance>
+			<li>
+				<defName>Kind</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Master</li>
+			<li>MSBS_Knight_Lord</li>
+			<li>MSBS_Knight_Ordained</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Vengeful Knight -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_KnightVengeful</defName>
+		<title>vengeful knight</title>
+		<titleShort>vengeful</titleShort>
+		<description>In the past, [PAWN_nameDef] failed an oath [PAWN_pronoun] had made to a person very important to [PAWN_objective]. Although the exact details of the event remain unclear, it is evident that the knight has never forgotten it, no matter how much [PAWN_pronoun] tries to hide behind the facade of chivalry.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>8</Melee>
+			<Animals>7</Animals>
+		</skillGains>
+		<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Master</li>
+			<li>MSBS_Knight_Lord</li>
+			<li>MSBS_Knight_Ordained</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Knight Apothecary -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_KnightApothecary</defName>
+		<title>knight apothecary</title>
+		<titleShort>apothecary</titleShort>
+		<description>A self-professed apothecary who has donned a suit of armor and the might of steel, [PAWN_nameDef] isn't sure whether [PAWN_pronoun] is more suitable for combat at the front or for healing the sick and wounded in the rear. So [PAWN_pronoun] chose both.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Medicine>8</Medicine>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Knight_Master</li>
+			<li>MSBS_Knight_Lord</li>
+			<li>MSBS_Knight_Ordained</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+
+
+	<!-- FLATLAND INQUISITOR (20 skill points) -->
+	<!-- Wandering Preacher -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_WanderingPreacher</defName>
+		<title>wandering preacher</title>
+		<titleShort>preacher</titleShort>
+		<description>[PAWN_nameDef] is a preacher from a distant land. [PAWN_pronoun] is very adamant about [PAWN_possessive] fanatical beliefs, to the extent that [PAWN_pronoun] is sometimes mistaken for a raving madman. This perception is deterred by [PAWN_possessive] priestly demeanor and apparent association with the church.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>9</Shooting>
+			<Mining>4</Mining>
+			<Cooking>4</Cooking>
+			<Social>9</Social>
+			<Intellectual>-5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Abrasive>0</Abrasive>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Inquisitor</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Flatland Rancher -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_FlatlandRancher</defName>
+		<title>flatland rancher</title>
+		<titleShort>rancher</titleShort>
+		<description>Roaming the grass-ridden field and herding the cattle as they graze, [PAWN_nameDef] is an honest rancher living an honest life. [PAWN_pronoun] ensures that the people of the plain have meat on their plates and wool for their clothes.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Cooking>5</Cooking>
+			<Animals>9</Animals>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Inquisitor</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Animal Healer -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_AnimalHealer</defName>
+		<title>animal healer</title>
+		<titleShort>healer</titleShort>
+		<description>An apothecary for animals in a society of hunters and cattle herders, [PAWN_nameDef] faces an endless stream of requests from the farms. While this means [PAWN_possessive] profession is often well-paid, it also means an unending workload for a job that by itself demands dedication.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Animals>8</Animals>
+			<Medicine>8</Medicine>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Inquisitor</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Repentant Lawman -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_LawmanRepentant</defName>
+		<title>repentant lawman</title>
+		<titleShort>lawman</titleShort>
+		<description>A vigilante with a regretful past, [PAWN_nameDef] has made a grave mistake that ended the life of another. Now [PAWN_pronoun] seeks to atone for [PAWN_possessive] sin by spilling the blood of the wicked and protecting the innocent.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Animals>6</Animals>
+			<Social>6</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Inquisitor</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Sanctioned Lawman -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_LawmanSanctioned</defName>
+		<title>sanctioned lawman</title>
+		<titleShort>lawman</titleShort>
+		<description>A lone upholder of law, sanctioned by the church itself, [PAWN_nameDef] has a mission to enforce the laws of the church in parallel with the laws among men. This task is often arduous, as it requires [PAWN_nameDef] to solve [PAWN_possessive] cases with nuanced consideration and careful words over blind violence.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>5</Melee>
+			<Social>7</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Inquisitor</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Duelist Lawman -->
+	<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_LawmanDuelist</defName>
+		<title>lawman duelist</title>
+		<titleShort>duelist</titleShort>
+		<description>The most romanticized archetype of a lawman, yet also the most infamous, individuals like [PAWN_nameDef] are less than ideal as upholders of the law, and more akin to opportunists who seek to wander the world, hone their skills in gunfights, and ultimately make a big name for themselves.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>7</Shooting>
+			<Melee>7</Melee>
+			<Social>6</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Inquisitor</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ThingDef ParentName="MS_HatMachining">
+		<defName>WFF_StormtrooperCap</defName>
+		<label>Stormtrooper cap</label>
+		<description>A solid metallic cap with soft interior padding, intended for Moosesian combatants who spend most of their fighting in the trenchline, offers great protection against mundane issues one would encounter on the field, such as getting their head shot, blasted, or burnt.
+
+		In the event that the widespread use of precision firearms were to render the Moosesians' traditional mass infantry doctrine obsolete, some speculate that the military would shift their resources and infrastructure towards attrition-based warfare. In such a scenario, a protective headpiece like this one would become part of the infantry standard.</description>
+		<recipeMaker>
+			<researchPrerequisite>MSR_Breechloader</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_StormtrooperCap</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>5</Mass>
+			<Flammability>0</Flammability>
+			<StuffEffectMultiplierArmor>1.0</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>FullHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_StormtrooperCap</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_GreatWarArmors</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+  
+</Defs>

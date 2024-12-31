@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- NPC FACTION: THE HOLY ORDER -->
+	<FactionDef ParentName="MoosesianFactionBase">
+		<defName>MooseChurch</defName>
+		<label>holy order</label>
+		<description>A congregation of devout followers and warriors of faith, where blessed maidens, men of the fringe, and divine knights unite as defenders of the faith. To cleanse the land of heretics and brace for the inevitable day of the great calamity.</description>
+		<colorSpectrum>
+			<li>(1, 0.9, 0.5)</li>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<naturalEnemy>true</naturalEnemy>
+		<listOrderPriority>31</listOrderPriority>
+		<canSiege>false</canSiege>
+		<leaderTitle>communion lord</leaderTitle>
+
+		<factionIconPath>Icon/MS_FactionIcon_Church</factionIconPath>
+		<settlementTexturePath>Icon/MS_ColonyIcon</settlementTexturePath>
+		<factionNameMaker>NamerFactionMSCrusader</factionNameMaker>
+		<settlementNameMaker>NamerSettlementMoosesian</settlementNameMaker>
+		
+		<techLevel>Medieval</techLevel>
+		<earliestRaidDays>45</earliestRaidDays>
+		<backstoryCategories>
+			<li>MSBS_ALL</li>
+		</backstoryCategories>
+		<melaninRange>0</melaninRange>
+		<allowedCultures>
+			<li>MS_Tradition</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+		</requiredMemes>
+		<disallowedMemes>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+		</disallowedMemes>
+		<caravanTraderKinds>
+			<li>Caravan_MooseChurch_CombatSupplier</li>
+			<li>Caravan_MooseChurch_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		
+	<!-- GROUP MAKER -->
+	
+	<!-- Combat Group -->
+	
+	<pawnGroupMakers>
+		<!-- Holy Knight Assault -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>30</commonality>
+			<options>
+			  <MS_Knight_Ordained>1</MS_Knight_Ordained>
+			</options> 
+		</li>
+		<!-- Inquisitor Infiltration -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>55</commonality>
+			<options>
+			  <MS_Inquisitor_Marshal>2</MS_Inquisitor_Marshal>
+			</options> 
+		</li>
+		<!-- Holy Maiden March-->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>10</commonality>
+			<options>
+				<MS_Nun_Executioner>1</MS_Nun_Executioner>
+				<MS_Nun_Seeker>1</MS_Nun_Seeker>
+			</options> 
+		</li>
+		<!-- Combined Arms -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>5</commonality>
+			<options>
+				<MS_Nun_HighPriest>1</MS_Nun_HighPriest>
+				<MS_Knight_Ordained>5</MS_Knight_Ordained>
+				<MS_Inquisitor_Marshal>4</MS_Inquisitor_Marshal>
+				<MS_Nun_Executioner>3</MS_Nun_Executioner>
+			</options>
+		</li>
+	  
+
+	  
+    <!-- Peaceful NPC Group -->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+				  <MS_Nun_HighPriest>1</MS_Nun_HighPriest>
+				  <MS_Nun_Executioner>6</MS_Nun_Executioner>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+				  <MS_Nun_Abbess>1</MS_Nun_Abbess>
+				  <MS_Nun_Executioner>6</MS_Nun_Executioner>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+				  <MS_Nun_Abbess>1</MS_Nun_Abbess>
+				</traders>
+				<carriers>
+				  <Horse>12</Horse>
+				</carriers>
+				<guards>
+				  <MS_Nun_Executioner>6</MS_Nun_Executioner>
+				</guards> 
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+  
+</Defs>

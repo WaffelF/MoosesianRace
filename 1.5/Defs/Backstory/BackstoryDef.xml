@@ -1,0 +1,1822 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AlienRace.AlienBackstoryDef Name="MSBackStory" Abstract="True">
+		<disallowedTraits>
+				<TooSmart>0</TooSmart>
+				<FastLearner>0</FastLearner>
+		</disallowedTraits>
+		<bodyTypeMale>Female</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>MSBS_ALL</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Use this for 'Universal' Childhood Backstory -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory" Name="MSBSUniversal" Abstract="True">
+		<spawnCategories>
+			<li>MSBS_General</li>
+			<li>MSBS_Guard</li>
+			<li>MSBS_Vanguard</li>
+			<li>MSBS_Warrior</li>
+			<li>MSBS_Longman</li>
+			<li>MSBS_Farmer</li>
+			<li>MSBS_Nun_HighPriest</li>
+			<li>MSBS_Nun_Abbess</li>
+			<li>MSBS_Nun_Executioner</li>
+			<li>MSBS_Nun_Seeker</li>
+			<li>MSBS_Knight_Master</li>
+			<li>MSBS_Knight_Ordained</li>
+			<li>MSBS_Inquisitor</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- CHILDHOOD (8 skill points) -->
+  
+  <!-- Social/Intelligence works -->
+  <!-- Horn Blower -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Horn_Blower</defName>
+		<title>Horn Blower</title>
+		<titleShort>Blower</titleShort>
+		<description>[PAWN_nameDef] often got invited to play at ceremonial events, [PAWN_possessive] other task is to warn everyone with [PAWN_possessive] horn when the village is under threat.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>3</Social>
+			<Artistic>3</Artistic>
+		</skillGains>
+		<forcedTraits>
+			 <SpeedOffset>1</SpeedOffset>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Child Messenger -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Child_Messenger</defName>
+		<title>Child Messenger</title>
+		<titleShort>Messenger</titleShort>
+		<description>[PAWN_nameDef] worked as a messenger for [PAWN_possessive] village, [PAWN_pronoun] could often be seen running from one household to another, carrying a bagful of letters wherever [PAWN_pronoun] went.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>4</Social>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Diplomatic Guest -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Diplomatic_Guest</defName>
+		<title>Diplomatic Guest</title>
+		<titleShort>Diplomat</titleShort>
+		<description>[PAWN_nameDef]'s parents often brought [PAWN_objective] along on their diplomatic trip. Having known so many people on [PAWN_possessive] journey, [PAWN_pronoun] never shy away from social interactions.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>6</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Scholar -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Scholar</defName>
+		<title>Young Scholar</title>
+		<titleShort>Scholar</titleShort>
+		<description>[PAWN_nameDef] was one of the few people born into a well educated, scholastic family, [PAWN_pronoun] knows all range of things from useful and interesting to downright irrelevant.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- Hunter & Butcher -->
+  <!-- Animal Stalker -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Animal_Stalker</defName>
+		<title>Animal Stalker</title>
+		<titleShort>Stalker</titleShort>
+		<description>[PAWN_nameDef] spent a lot of time with the local hunters, they taught [PAWN_objective] how to track injured prey in exchange for helping them out.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Animals>5</Animals>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Trained Hunter -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Trained_Hunter</defName>
+		<title>Little Hunter</title>
+		<titleShort>Hunter</titleShort>
+		<description>[PAWN_nameDef] was taught to hunt by [PAWN_possessive] elders, to assist them in providing for [PAWN_possessive] family.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Animals>3</Animals>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Kitchen Assistant -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Kitchen_Assistant</defName>
+		<title>Kitchen Assistant</title>
+		<titleShort>Cook</titleShort>
+		<description>[PAWN_nameDef] loved staying with [PAWN_possessive] elder sisters in the kitchen, helping them prepare meals for the rest of [PAWN_possessive] family.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Animals>2</Animals>
+			<Plants>2</Plants>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Desperate Chef -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Desperate_Chef</defName>
+		<title>Desperate Chef</title>
+		<titleShort>Chef</titleShort>
+		<description>[PAWN_nameDef] was born in poverty, spending each day on the veneer of starvation, [PAWN_pronoun] had to cooked and ate anything [PAWN_pronoun] could get [PAWN_possessive] hands on.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Cooking>6</Cooking>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Ascetic</defName>
+				<chance>20</chance>
+			</li>
+			<li>
+				<defName>Cannibal</defName>
+				<chance>20</chance>
+			</li>
+			<li>
+				<defName>Gourmand</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Meat Chopper -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Meat_Chopper</defName>
+		<title>Meat Chopper</title>
+		<titleShort>Chopper</titleShort>
+		<description>[PAWN_nameDef] loved being around the livestocks, including ones [PAWN_pronoun] would soon be tasked to butcher. [PAWN_nameDef] loves animals and would try to get the most out of each life taken.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Cooking>5</Cooking>
+			<Animals>3</Animals>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- Labor -->
+  <!-- Volunteering Child -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Volunteering_Child</defName>
+		<title>Volunteering child</title>
+		<titleShort>Volunteer</titleShort>
+		<description>[PAWN_nameDef] always helps people with all sort of labor works, everyone thought of [PAWN_objective] hardworking and reliable.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Social>4</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+				  <li>
+					<defName Degree="1">Industriousness</defName>
+				  </li>
+				  <li>
+					<defName Degree="2">Industriousness</defName>
+				  </li>
+				</options>
+				<count>1</count>
+				<chance>30</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Smithing Helper -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Smithing_Helper</defName>
+		<title>Smithing Helper</title>
+		<titleShort>Helper</titleShort>
+		<description>[PAWN_nameDef] was once a helping hand for the local blacksmith, during which the craftman taught [PAWN_nameDef] directly on the basic of his crafts.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Crafting>8</Crafting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Lumberjack Child -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Lumberjack_Child</defName>
+		<title>Lumberjack Child</title>
+		<titleShort>Lumberjack</titleShort>
+		<description>[PAWN_nameDef] knows the trees like the back of [PAWN_possessive} hand, for [PAWN_nameDef] has spent most of [PAWN_possessive] childhood chopping them for firewoods.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>6</Plants>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Stableboy -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Stableboy</defName>
+		<title>Stableboy</title>
+		<titleShort>Stableboy</titleShort>
+		<description>Horses and rideable animals are precious and thus often reserved to the few eldest members of the family. [PAWN_nameDef]'s job was to take care of them.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Animals>8</Animals>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Carpentry Student -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Carpentry_Student</defName>
+		<title>Carpentry Student</title>
+		<titleShort>Carpenter</titleShort>
+		<description>After having devoted [PAWN_objective]self to studying with the finest woodworker in the realm. Be it simple furniture, an art piece or construction, there is barely a thing [PAWN_nameDef] couldn't get [PAWN_possessive] hands on.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>6</Construction>
+			<Artistic>5</Artistic>
+			<Plants>5</Plants>
+			<Medicine>-4</Medicine>
+			<Mining>-4</Mining>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Forced Labor -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Forced_Labor</defName>
+		<title>Forced Labor</title>
+		<titleShort>Labor</titleShort>
+		<description>[PAWN_nameDef] was subjected to hard labor since very young age, the cruelty of [PAWN_possessive] working condition has made [PAWN_objective] afraid of people.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Mining>4</Mining>
+			<Crafting>4</Crafting>
+			<Social>-4</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- Medicine -->
+  <!-- Botanist Disciple -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Botanist_Disciple</defName>
+		<title>Amateur Herbalist</title>
+		<titleShort>Herbalist</titleShort>
+		<description>[PAWN_nameDef] loved playing in the kitchen with wild herbs foraged from the outside of [PAWN_possessive] household. Over time [PAWN_pronoun] has discovered and learned to harness their medicinal properties.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>4</Plants>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Infirmier</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Surgeon Trainee -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Surgeon_Trainee</defName>
+		<title>Surgeon Trainee</title>
+		<titleShort>Surgeon</titleShort>
+		<description>[PAWN_nameDef] was sent from [PAWN_possessive] family to learn everything [PAWN_pronoun] could from a professional surgeon, as traumatizing as it is to witness suffering and death, the knowledges [PAWN_pronoun] has acquired in the process proves worthy in the end.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Medicine>6</Medicine>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Infirmier</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Uncertified Butcher -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Uncertified_Butcher</defName>
+		<title>Uncertified Butcher</title>
+		<titleShort>Butcher</titleShort>
+		<description>This one has professed a lot of interests in anatomy of the living. But due to [PAWN_possessive] lack of proper upbringing, [PAWN_pronoun] has resorted to a questionable mean of education..</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Shooting>2</Shooting>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Infirmier</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- Weirdos (8 skill points) -->
+  <!-- Trauma Survivor -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Trauma_Survivor</defName>
+		<title>Trauma Survivor</title>
+		<titleShort>Survivor</titleShort>
+		<description>[PAWN_nameDef] has experienced a distressing event which [PAWN_pronoun] has never spoke of, but the impact it has on [PAWN_objective] will always be there, [PAWN_pronoun] flinches at the faintest sign of blood.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Cooking>3</Cooking>
+			<Plants>3</Plants>
+			<Animals>3</Animals>
+			<Artistic>3</Artistic>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+			<li>Violent</li>
+			<li>Caring</li>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Farmer</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Delicate Spouse -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Delicate_Spouse</defName>
+		<title>Delicate Spouse</title>
+		<titleShort>Spouse</titleShort>
+		<description>[PAWN_nameDef] was the result of generations of selective breeding in [PAWN_possessive] family to create an ideal heir with superior physical and genetic traits. [PAWN_nameDef] possessed exceptional immunity and striking beauty, among other traits. However, due to [PAWN_possessive] sheltered upbringing, [PAWN_pronoun] may have developed some undesirable social behaviors.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+			<Mining>-2</Mining>
+		</skillGains>
+		<forcedTraits>
+			<Beauty>2</Beauty>
+			<Immunity>1</Immunity>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- Young Militia group (12 skill points) -->
+  <!-- Young Scout -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Scout</defName>
+		<title>Young Scout</title>
+		<titleShort>Scout</titleShort>
+		<description>[PAWN_nameDef] was a part of the young scouts, a paramilitary movement that focuses on teaching its members the basics of wilderness survival, including camping, foraging, hunting, and so forth.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Animals>3</Animals>
+			<Plants>3</Plants>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Infantry -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Infantry</defName>
+		<title>Infantry Cadet</title>
+		<titleShort>Cadet</titleShort>
+		<description>Before [PAWN_nameDef] could become a full-fledged warrior, it is recommended that [PAWN_pronoun] first undergo a short period of intense drills and physical examination, during which period [PAWN_pronoun] will be known as a cadet.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Rifleman -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Rifleman</defName>
+		<title>Little Rifle</title>
+		<titleShort>Riflette</titleShort>
+		<description>The elders selected [PAWN_nameDef] for [PAWN_possessive] natural talent with firearms. [PAWN_pronoun] was one of the few individuals allowed to wield a rifle at such a young age.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>3</Melee>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Grenadier -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Grenadier</defName>
+		<title>Honorary Guard</title>
+		<titleShort>Grenadier</titleShort>
+		<description>As a child, [PAWN_nameDef] loved pretending to be a grenadier. Although some thought [PAWN_possessive] demeanor laughable, the elders found it adorable and played along. Some even went as far as giving [PAWN_objective] real training.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Swordguard -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Swordguard</defName>
+		<title>Swordguard Protege</title>
+		<titleShort>Swordguard</titleShort>
+		<description>[PAWN_nameDef] displayed exceptional skill in a duel against [PAWN_possessive] long-time rival, drawing the attention of the elders who then proceeded to take [PAWN_objective] in for personal training.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>7</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Flagbearer -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Flagbearer</defName>
+		<title>Tiny Flagbearer</title>
+		<titleShort>Flagbearer</titleShort>
+		<description>Handpicked from among the most lively of [PAWN_possessive] age, [PAWN_nameDef] was appointed as the flagbearer due to [PAWN_possessive] unwavering spirit, which always shines as brightly as the flag [PAWN_pronoun] carries.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<NaturalMood>2</NaturalMood>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Signaller -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Signaller</defName>
+		<title>Merry Drummer</title>
+		<titleShort>Drummer</titleShort>
+		<description>[PAWN_nameDef] played a wide range of rhythms on [PAWN_possessive] drums, [PAWN_possessive] beats infusing energy and life into ceremonies and battlefields alike. Despite being a youngling with large and heavy drums, [PAWN_nameDef] possesses the capability to defend herself with ease.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Artistic>6</Artistic>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Field cook -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_FCook</defName>
+		<title>Mess Master</title>
+		<titleShort>Cook</titleShort>
+		<description>[PAWN_nameDef] has talents in the culinary field, and it shows in both appearance, taste, and aroma of [PAWN_possessive] dishes. It was for this reason that they dubbed [PAWN_objective] 'master of the mess hall'.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Cooking>6</Cooking>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Handler -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Handler</defName>
+		<title>Ride Handler</title>
+		<titleShort>Handler</titleShort>
+		<description>Cavalrymen need their horses, but the horses also require care to be at its peak condition. A handler, such as [PAWN_nameDef], is responsible for the horse's care and maintenance.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Cooking>3</Cooking>
+			<Medicine>3</Medicine>
+			<Animals>6</Animals>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Cavalry -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Cavalry</defName>
+		<title>Novice Rider</title>
+		<titleShort>Rider</titleShort>
+		<description>[PAWN_nameDef] was a skilled rider who has formed a strong bond with [PAWN_possessive] horse. They could often be seen galloping through the grassy field.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Animals>6</Animals>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Young Trencher -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBSUniversal">
+		<defName>MS_Young_Trencher</defName>
+		<title>Little Trencher</title>
+		<titleShort>Trencher</titleShort>
+		<description>[PAWN_nameDef] was no stranger to getting down and dirty in the soil, nor did [PAWN_pronoun] ever hesitate to get [PAWN_possessive] hands dirty with all the earthworks [PAWN_pronoun] was asked to do.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Mining>6</Mining>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- Heavensent group (30 skill points) -->
+  <!-- Industrialist Heir  -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Heavensent_Industrialist</defName>
+		<title>industrialist heir</title>
+		<titleShort>survivor</titleShort>
+		<description>[PAWN_nameDef] inherited an industrial enterprise from [PAWN_possessive] father. Since then, [PAWN_nameDef] has spent much of [PAWN_possessive] childhood studying everything essential to running a business and protecting [PAWN_possessive] own life from competitors.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Crafting>6</Crafting>
+			<Social>6</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Heavensent</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- ADULTHOOD -->
+  
+	<!-- General (28 skill points + optional free trait 2 degrees) -->
+  <!-- Wise Strategist -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_WGeneral</defName>
+		<title>Wise Strategist</title>
+		<titleShort>Strategist</titleShort>
+		<description>A renowned military strategist, [PAWN_nameDef] has participated in various theaters of war throughout [PAWN_possessive] career. [PAWN_pronoun] was highly regarded for [PAWN_possessive] ingenious strategic acumen and [PAWN_possessive] ability to make quick and effective decisions on the battlefield.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>9</Shooting>
+			<Melee>9</Melee>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_General</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Honorable Figure -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_HGeneral</defName>
+		<title>Honorable Leader</title>
+		<titleShort>General</titleShort>
+		<description>[PAWN_nameDef] was widely supported by [PAWN_possessive] subjects to be their ruler due to [PAWN_possessive] straightforwardness and sincerity, as well as [PAWN_possessive] formidable martial prowess.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>9</Shooting>
+			<Melee>9</Melee>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+			<Greedy>0</Greedy>
+			<Jealous>0</Jealous>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_General</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Benevolent General -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_BGeneral</defName>
+		<title>Benevolent Ruler</title>
+		<titleShort>General</titleShort>
+		<description>[PAWN_nameDef] was widely regarded for [PAWN_possessive] immense patience and benevolence, but [PAWN_possessive] subordinates are well aware that such kindness should never be mistaken as a sign of weakness.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>9</Shooting>
+			<Melee>9</Melee>
+			<Medicine>10</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Kind>0</Kind>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_General</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Frontline Commander -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_CGeneral</defName>
+		<title>Frontline Commander</title>
+		<titleShort>General</titleShort>
+		<description>[PAWN_nameDef] was always at the forefront of each and every battle. With the amount of dangers [PAWN_pronoun] has exposed [PAWN_objective]self to, [PAWN_possessive] survival thus far is considered a miracle by many.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>10</Melee>
+			<Animals>10</Animals>
+		</skillGains>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_General</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Iron Marshal -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_SGeneral</defName>
+		<title>Iron Marshal</title>
+		<titleShort>Marshal</titleShort>
+		<description>It is commonly joked that [PAWN_nameDef], with [PAWN_possessive] exceedingly strict leadership, would follow someone all the way to the afterlife just to scold them for dying without [PAWN_possessive] permission.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>10</Melee>
+			<Social>8</Social>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>2</Nerves>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_General</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!-- Guard (20 skill points + optional free trait 1 degree) -->
+  <!-- Aspiring Chief -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Aspiring_Guard</defName>
+		<title>Aspiring Chief</title>
+		<titleShort>Chief</titleShort>
+		<description>With charisma and steadfastness, [PAWN_nameDef]'s mere presence lifts the spirits of those around her, [PAWN_possessive] unwavering morale a source of inspiration for all.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Social>8</Social>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>2</Nerves>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Guard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Jack Guard -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Jack_Guard</defName>
+		<title>Jack Guard</title>
+		<titleShort>Guard</titleShort>
+		<description>A well-rounded individual, [PAWN_nameDef] possesses a diverse set of skills and knowledge, small as they may, they have proven to be valuable assets in many situations.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Mining>2</Mining>
+			<Plants>2</Plants>
+			<Medicine>2</Medicine>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Guard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Medical Guard -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Medical_Guard</defName>
+		<title>Medical Guard</title>
+		<titleShort>Medic</titleShort>
+		<description>[PAWN_nameDef] possessed a wealth of medical knowledge and experience honed through [PAWN_possessive] years on the battlefield along side [PAWN_possessive] martial might.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Medicine>8</Medicine>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Guard</li>
+			<li>MSBS_Infirmier</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Combat Specialist -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_CombatSpecialist_Guard</defName>
+		<title>Combat Specialist</title>
+		<titleShort>Specialist</titleShort>
+		<description>With [PAWN_possessive] involvement in many strategic battles and covert operations, [PAWN_nameDef] has a level of expertise that sets [PAWN_objective] apart from the rest.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>10</Melee>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>1</SpeedOffset>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Guard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Negotiator -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Negotiator_Guard</defName>
+		<title>Negotiator</title>
+		<titleShort>Negotiator</titleShort>
+		<description>[PAWN_nameDef] was known for [PAWN_possessive] exceptional insight, often being the first person called upon to diffuse tense situations and prevent fights from breaking out within the group.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Guard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Ironeye Shooter -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Ironeye_Guard</defName>
+		<title>Ironeye Shooter</title>
+		<titleShort>Sharpshooter</titleShort>
+		<description>[PAWN_nameDef] was gifted with perceptive eyes and a tranquil spirit, ideal qualities for a natural marksman.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>6</Melee>
+			<Artistic>6</Artistic>
+		</skillGains>
+		<forcedTraits>
+			<ShootingAccuracy>1</ShootingAccuracy>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Guard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Keep Guard -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Keep_Guard</defName>
+		<title>Keep Officer</title>
+		<titleShort>Keeper</titleShort>
+		<description>[PAWN_nameDef] spent much of [PAWN_possessive] time at the army headquarters, overseeing logistics and weapon production. You'd be hard-pressed to find someone more suited for the job than [PAWN_pronoun] is.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Crafting>5</Crafting>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Guard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- Old Guard -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Old_Guard</defName>
+		<title>Old Guard</title>
+		<titleShort>Old Guard</titleShort>
+		<description>The bravest of the brave, oldest of the eld. [PAWN_nameDef] is held in high esteem and commands respect, even among the highest ranks of the military.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>10</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_OldGuard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  
+  
+  <!-- Vanguard (16 skill points) -->
+  <!-- Quickshooter -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Quickshooter_Vanguard</defName>
+		<title>Quickshooter</title>
+		<titleShort>Quickshooter</titleShort>
+		<description>A seasoned gunslinger who has survived numerous standoffs, relying on the quick draw of [PAWN_possessive] pistol and a touch of luck.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>7</Shooting>
+			<Melee>5</Melee>
+			<Plants>4</Plants>
+		</skillGains>
+		<forcedTraits>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Vanguard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Army Joker -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Joker_Vanguard</defName>
+		<title>Army Joker</title>
+		<titleShort>Joker</titleShort>
+		<description>[PAWN_nameDef] was known for [PAWN_possessive] lighthearted and jovial demeanor, never failing to crack a joke even in the direst of circumstances.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>5</Melee>
+			<Social>5</Social>
+		</skillGains>
+		<forcedTraits>
+			<NaturalMood>2</NaturalMood>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Vanguard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Normal Vanguard -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Normal_Vanguard</defName>
+		<title>Ordinary One</title>
+		<titleShort>Vanguard</titleShort>
+		<description>[PAWN_nameDef] was a well-rounded individual, with a balanced set of skills and interests. While [PAWN_pronoun] may not have excelled in any particular field, [PAWN_pronoun] was always there to lend a hand.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Plants>2</Plants>
+			<Construction>2</Construction>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Vanguard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Hardworking Grunt -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Hardworking_Vanguard</defName>
+		<title>Hardworking Grunt</title>
+		<titleShort>Grunt</titleShort>
+		<description>[PAWN_nameDef] once realized [PAWN_pronoun] had no interest in sophisticated tasks or intellectual endeavors. From that point on, [PAWN_pronoun] has preferred to focus on labor-intensive work.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>6</Melee>
+			<Plants>4</Plants>
+			<Construction>4</Construction>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Vanguard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Light Engineer -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Engineer_Vanguard</defName>
+		<title>Light Engineer</title>
+		<titleShort>Engineer</titleShort>
+		<description>[PAWN_nameDef] was tasked with constructing defensive structures and other necessary structures for the army at any location and time, even in the midst of battle. When not on the frontline, [PAWN_pronoun] was responsible for repairing and maintaining any damage inflicted on civilian structures during battles.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Construction>6</Construction>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Vanguard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Provision Officer -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Provision_Vanguard</defName>
+		<title>Provisioner Sergeant</title>
+		<titleShort>Provisioner</titleShort>
+		<description>[PAWN_nameDef] was responsible for the management of army's logistics and ensuring the seamless flow of supplies, a task that may seem routine, but one that was critical to the army with all the responsibility it requires.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>7</Shooting>
+			<Melee>7</Melee>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Vanguard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Field Culinarian -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Culinary_Vanguard</defName>
+		<title>Field Culinarian</title>
+		<titleShort>Culinarian</titleShort>
+		<description>[PAWN_nameDef]'s main responsibility is to ensure that everyone is properly fed, regardless of their location or situation. As long as the food is safe and edible, its origin or taste doesn't matter.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Cooking>8</Cooking>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Vanguard</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!-- Warrior (12 skill points) -->
+  <!-- Gloryseeking Recruit -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Gloryhound_Warrior</defName>
+		<title>Glory Seeker</title>
+		<titleShort>Seeker</titleShort>
+		<description>[PAWN_nameDef] was drawn to the allure of fortune and glory in the army, but [PAWN_pronoun] joined with a higher purpose in mind. [PAWN_pronoun] enlisted with the ambition to fulfill [PAWN_possessive] God-given destiny and see it through to the end with [PAWN_possessive] own eyes.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>4</Melee>
+			<Animals>5</Animals>
+		</skillGains>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Warrior</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Recruited Fodder -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Recruited_Warrior</defName>
+		<title>Adventurous Recruit</title>
+		<titleShort>Recruit</titleShort>
+		<description>Energetic and full of curiosity, [PAWN_nameDef] enlisted into the military out of a sheer heart desire to travel and see the wider world, meet new people, and brave the unknown.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Plants>2</Plants>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Warrior</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Bloodlusted Warrior -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Bloodlust_Warrior</defName>
+		<title>Troubled Recruit</title>
+		<titleShort>Recruit</titleShort>
+		<description>Troubled by [PAWN_possessive] tendency toward violence and apathy, [PAWN_nameDef] was sent to boot camp by [PAWN_possessive] family in the hope that the harshness of military life and discipline would help alleviate [PAWN_possessive] behavior.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>6</Melee>
+			<Plants>2</Plants>
+		</skillGains>
+		<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Warrior</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Steadfast Sergeant -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Steadfast_Warrior</defName>
+		<title>Morale Sergeant</title>
+		<titleShort>Sergeant</titleShort>
+		<description>Coming from a family with strict rules and a delicate upbringing, [PAWN_nameDef] always did [PAWN_possessive] best to set a good example for those around [PAWN_objective].</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>4</Melee>
+			<Plants>3</Plants>
+		</skillGains>
+		<forcedTraits>
+			<Beauty>1</Beauty>
+			<Nerves>1</Nerves>
+			<DrugDesire>-1</DrugDesire>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Warrior</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Trench Digger -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Trench_Warrior</defName>
+		<title>Trench Digger</title>
+		<titleShort>Trencher</titleShort>
+		<description>[PAWN_nameDef] had the role of a trench digger in the army, working through rain and mud to create defensive fortifications that would hopefully save lives in battle.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Mining>4</Mining>
+			<Construction>4</Construction>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Warrior</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!-- Longman (8~12 skill points) || TL NOTE: Longarm = Polearm, thus Longman = Spear/Bill/Pikeman and etc. -->
+  <!-- Farmstead Guard -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Farm_Longman</defName>
+		<title>Farmstead Guardian</title>
+		<titleShort>Farmguard</titleShort>
+		<description>[PAWN_nameDef] was a farmer by trade, tending [PAWN_possessive] farm during the day and patrolling [PAWN_possessive] village at dusk. [PAWN_possessive] main duty was to ensure that wildlife stayed clear of the area and to keep watch over the harvest.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>4</Melee>
+			<Plants>5</Plants>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Longman</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Night Watcher -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Night_Longman</defName>
+		<title>Night Watcher</title>
+		<titleShort>Nightwatch</titleShort>
+		<description>[PAWN_nameDef] has trouble keeping [PAWN_possessive] eyes closed at night, so it was not uncommon to see [PAWN_objective] wandering around outside after hours, [PAWN_pronoun] later took up a night watch duty for this very reason.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+			<NightOwl>0</NightOwl>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Longman</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Talented Longman -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Talented_Longman</defName>
+		<title>Longarms Instructor</title>
+		<titleShort>Instructor</titleShort>
+		<description>With [PAWN_possessive] knowledge of long weaponry and fighting technique, a longarms instructor, such as [PAWN_nameDef], is essential to communities seeking quick and professional training for their people.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>6</Melee>
+			<Social>4</Social>
+		</skillGains>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Longman</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!-- Farmer (8~12 skill points) -->
+  <!-- Private Farmer -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Private_Farmer</defName>
+		<title>Farm Owner</title>
+		<titleShort>Farmer</titleShort>
+		<description>A diligent and hardworking heir, owner, and worker of her family's farmstead, [PAWN_nameDef] devoted long hours to cultivating and harvesting crops alongside her kin and fellow farmhands.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Plants>4</Plants>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Farmer</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Wild Farmer -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Wild_Farmer</defName>
+		<title>Rural Farmer</title>
+		<titleShort>Farmer</titleShort>
+		<description>[PAWN_nameDef] lives in a remote wilderness with a scattered community to rely on. Thus, in addition to [PAWN_possessive] farming profession, being able to forage and hunt is an absolute necessity.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Plants>4</Plants>
+			<Animals>3</Animals>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Farmer</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Army Supplier -->
+   <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Warband_Farmer</defName>
+		<title>Army Supplier</title>
+		<titleShort>Farmer</titleShort>
+		<description>[PAWN_nameDef] grows and sells [PAWN_possessive] crop harvest to the local military in exchange for profit, protection and personal autonomy, [PAWN_pronoun] also engages in import and export of various goods such as weapons, medical supplies and rare resources.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Plants>5</Plants>
+			<Social>3</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Farmer</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Plantation Owner -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Plantation_Farmer</defName>
+		<title>Plantation Owner</title>
+		<titleShort>Farmer</titleShort>
+		<description>[PAWN_nameDef] owns a plantation and sells its products to anyone with the wealth to pay. The types of crops grown on [PAWN_possessive] farm could be anything, ranging from normal food crops for everyday consumption, to cash crops grown solely for profits.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Plants>5</Plants>
+			<Social>7</Social>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Farmer</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!-- Wanderers & Outlaws (8~16 skill points) -->
+  <!-- Wandering Artist -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Wandering_Artist</defName>
+		<title>Wandering Artist</title>
+		<titleShort>Artist</titleShort>
+		<description>[PAWN_nameDef] has roamed across the realm in [PAWN_possessive] quest to seek the perfect inspiration for [PAWN_possessive] art piece. [PAWN_pronoun] has often been taken in by a wide range of communities, in exchange for food and a place to lay [PAWN_possessive] head.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Artistic>5</Artistic>
+			<Social>3</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Free Spirit -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Free_Spirit</defName>
+		<title>Free Spirit</title>
+		<titleShort>Freeman</titleShort>
+		<description>After the coming of age, [PAWN_nameDef] was obliged to leave [PAWN_possessive] family in order to start a new life. In [PAWN_possessive] personal quest to wander the world, [PAWN_pronoun] went through several occupations and interesting encounters, thus having developed a skill set required to fend for [PAWN_objective]self in variety of situations.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>3</Melee>
+			<Shooting>3</Shooting>
+			<Plants>2</Plants>
+			<Animals>2</Animals>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Inquisitor</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Frontiersman -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Frontiersman</defName>
+		<title>Frontiersman</title>
+		<titleShort>Frontiersman</titleShort>
+		<description>[PAWN_nameDef] lived on the frontier of civilization, where life was often slow-paced and rustic. Although basic necessities were scarce, [PAWN_nameDef] had a close-knit relationship with the local community, who were always there to help in [PAWN_possessive] times of need.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Plants>3</Plants>
+			<Animals>3</Animals>
+		</skillGains>
+		<forcedTraits>
+			<ShootingAccuracy>1</ShootingAccuracy>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Inquisitor</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Settlement Builder -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Settlement_Builder</defName>
+		<title>Settlement Builder</title>
+		<titleShort>Builder</titleShort>
+		<description>[PAWN_nameDef] was a construction worker, settlement planner, and agriculturalist all rolled into one. [PAWN_pronoun] was paid by the local government to explore the wilderness in search and preparation of land suitable for settlement.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Construction>6</Construction>
+			<Plants>6</Plants>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!-- Medical type (8~12 skill points) -->
+  <!-- Village Surgeon -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Village_Surgeon</defName>
+		<title>Village Surgeon</title>
+		<titleShort>Surgeon</titleShort>
+		<description>[PAWN_nameDef] was paid and taught by [PAWN_possessive] family to become a surgeon dedicated to [PAWN_possessive] hometown and the allies of [PAWN_possessive] family.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Medicine>8</Medicine>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Infirmier</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Botanist -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Botanist</defName>
+		<title>Herbalist</title>
+		<titleShort>Herbalist</titleShort>
+		<description>An expert in plants and their medicinal properties, [PAWN_nameDef] makes herbal remedies for the community [PAWN_pronoun] resides with, while the rest of the products are sold for profit and often for charity.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Plants>5</Plants>
+			<Medicine>5</Medicine>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MSBS_Infirmier</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <!-- Artisan type (8~12 skill points) -->
+  <!-- Village Whitesmith -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Village_Whitesmith</defName>
+		<title>Village Whitesmith</title>
+		<titleShort>Whitesmith</titleShort>
+		<description>[PAWN_nameDef] was proficient in [PAWN_possessive] craft using light metals. [PAWN_possessive] typical projects ranged from building and repairing simple furniture and decorative objects to door locks and keys.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Construction>4</Construction>
+			<Crafting>4</Crafting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Village Blacksmith -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Village_Blacksmith</defName>
+		<title>Village Blacksmith</title>
+		<titleShort>Blacksmith</titleShort>
+		<description>For a significant portion of [PAWN_possessive] life, [PAWN_nameDef] has devoted [PAWN_objective]self to the art of blacksmithing. If provided with necessary materials, [PAWN_pronoun] is capable of bringing any concept to life through [PAWN_possessive] exceptional craftsmanship and tireless labor.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Crafting>10</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+				  <li>
+					<defName Degree="1">Industriousness</defName>
+				  </li>
+				  <li>
+					<defName Degree="2">Industriousness</defName>
+				  </li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Earth Sculptor -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Earth_Sculptor</defName>
+		<title>Earth Sculptor</title>
+		<titleShort>Sculptor</titleShort>
+		<description>[PAWN_nameDef] created art and pottery using earthly materials such as clay, ceramic, and sometimes even metals. Although highly regarded for [PAWN_possessive] craftsmanship, much of [PAWN_nameDef]'s works were artistic in nature.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!-- Mine workers (8~12 skill points) -->
+  <!-- Earth Miner -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Earth_Miner</defName>
+		<title>Ore Miner</title>
+		<titleShort>Miner</titleShort>
+		<description>[PAWN_nameDef] spent [PAWN_possessive] days under the torch's light deep down in the mine, digging out precious minerals from hard grips of earth, supplying the local craftsmen with the finest quality of ores.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Mining>8</Mining>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Spelunker -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Spelunker</defName>
+		<title>Spelunker</title>
+		<titleShort>Spelunker</titleShort>
+		<description>As part of [PAWN_possessive] job and occasional hobby, [PAWN_nameDef] have explored various caves, sinkholes and caverns in search for ore deposits and unforeseen treasures. [PAWN_pronoun] was also obliged to subdue any threats [PAWN_pronoun] came across, in order to pave the way for future mining operations.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>3</Melee>
+			<Mining>5</Mining>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Cave Clearer -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Cave_Clearer</defName>
+		<title>Cave Clearer</title>
+		<titleShort>Clearer</titleShort>
+		<description>A former caver turned exterminator. The need for [PAWN_nameDef]'s service come in the event where a cave or mine has become infested, overrun or considered too dangerous for use, it was [PAWN_possessive] job to go in and clear the place.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>7</Melee>
+			<Mining>5</Mining>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Mine Foreman -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Mine_Foreman</defName>
+		<title>Mine Foreman</title>
+		<titleShort>Foreman</titleShort>
+		<description>[PAWN_nameDef] served as the leader for the mine [PAWN_pronoun] worked in. What set [PAWN_objective] apart from [PAWN_possessive] crew was [PAWN_possessive] ability to control the workers and adapt to the ever-changing situation.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Mining>5</Mining>
+			<Intellectual>3</Intellectual>
+			<Social>4</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!-- Woodworker (8~12 skill points) -->
+  <!-- Lathmaker -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Lathmaker</defName>
+		<title>Lathmaker</title>
+		<titleShort>Lathmaker</titleShort>
+		<description>[PAWN_nameDef] was a lathmaker. [PAWN_pronoun] cut and tended wood into its desired shape, which would then be used as a part of woodworking and construction projects.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Crafting>4</Crafting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Carpenter -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Carpenter</defName>
+		<title>Carpenter</title>
+		<titleShort>Carpenter</titleShort>
+		<description>From creating simple art pieces to constructing buildings, a carpenter like [PAWN_nameDef] was considered a master of [PAWN_possessive] craft. [PAWN_pronoun] was a person of integrity and would never leave [PAWN_possessive] clients disappointed.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Construction>7</Construction>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Logger -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Logger</defName>
+		<title>Logger</title>
+		<titleShort>Logger</titleShort>
+		<description>[PAWN_nameDef] was seldom seen at home, for [PAWN_pronoun] dedicated half of [PAWN_possessive] days to chopping woods in the nearby forest. The products of [PAWN_possessive] labor were then processed for their intended uses, from fuel for cooking and heating homes to construction materials. Such a simple profession was essential to the growth and development of society.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Plants>6</Plants>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!--Community service (8 skill points) -->
+  <!-- Community Chef -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Community_Chef</defName>
+		<title>Community Chef</title>
+		<titleShort>Chef</titleShort>
+		<description>[PAWN_nameDef] was the beloved cook of the local community, renowned for [PAWN_possessive] delicious culinary creations and eagerness to serve others. Whether it be a family event or a neighborhood gathering, [PAWN_nameDef] was always ready to share [PAWN_possessive] talents and passion for cooking.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Cooking>8</Cooking>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Courier -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Courier</defName>
+		<title>Courier</title>
+		<titleShort>Courier</titleShort>
+		<description>[PAWN_nameDef] worked with delivery services as one of the town couriers. [PAWN_pronoun] delivers packages, letters, and undisclosed items from one household in town to another's doorstep. If a great peril were to occur, [PAWN_pronoun] would be the first to relay the news to the neighboring communities.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>6</Social>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Hostler -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Hostler</defName>
+		<title>Hostler</title>
+		<titleShort>Hostler</titleShort>
+		<description>When the town's stables were unable to accommodate every traveler's horse, [PAWN_nameDef] was responsible for their care. With a watchful eye and a gentle hand, [PAWN_pronoun] tended to the animals while their owners attended to business in town.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Animals>3</Animals>
+			<Social>3</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Village Hunter -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Village_Hunter</defName>
+		<title>Village Hunter</title>
+		<titleShort>Hunter</titleShort>
+		<description>[PAWN_nameDef] lived as part of a nomadic group, relying on hunting and gathering as the means to survive. However, unlike many other groups, [PAWN_pronoun] maintained a trusting relationship with a nearby village who allowed them to live on their lands in exchange for part of their game.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Animals>4</Animals>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+	<!-- Familymen (8~12 skill points) -->
+	<!--//people who stays home to take care of their family, mostly are the young adult who are not yet ready enough to see the outside world-->
+  <!-- Family Caretaker -->
+<AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Family_Caretaker</defName>
+		<title>Family Caretaker</title>
+		<titleShort>Caretaker</titleShort>
+		<description>[PAWN_nameDef] spent most of [PAWN_possessive] time taking care of [PAWN_possessive] parents and the rest of [PAWN_possessive] family. [PAWN_pronoun] was rarely seen outside [PAWN_possessive] home, and [PAWN_possessive] friends usually had to come to visit [PAWN_objective] there.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Cooking>5</Cooking>
+			<Medicine>3</Medicine>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Family Guard -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Family_Guard</defName>
+		<title>Family Guard</title>
+		<titleShort>Famguard</titleShort>
+		<description>[PAWN_nameDef] was chosen by [PAWN_possessive] father to be the guardian of the family, whose role was to act in his stead during the times of his absence. The reason [PAWN_pronoun] was chosen is less because of [PAWN_possessive] martial talents, and more because of [PAWN_possessive] popularity among the siblings.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>5</Melee>
+			<Social>5</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- Children Lector -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Children_Lector</defName>
+		<title>Children Lector.</title>
+		<titleShort>Lector</titleShort>
+		<description>During the day, [PAWN_nameDef] would stay with [PAWN_possessive] young siblings, teaching them about the outside world. While at night, [PAWN_pronoun] would tell them various bedtime stories as [PAWN_pronoun] sent them off to sleep. [PAWN_nameDef] was loved by all of [PAWN_possessive] family and many others.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>5</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Kind>0</Kind>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- House Feeder -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_House_Feeder</defName>
+		<title>House Feeder</title>
+		<titleShort>Feeder</titleShort>
+		<description>One of the older members of the household, [PAWN_nameDef] tended to the garden to ensure a bountiful harvest of fresh ingredients for culinary uses. With these harvested ingredients, [PAWN_pronoun] would prepare a pot full of delicious meals, enough to provide the entire family with a heartwarming dinner.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Cooking>6</Cooking>
+			<Plants>2</Plants>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+	
+	<!-- Heavensent group (30 skill points) -->
+  <AlienRace.AlienBackstoryDef ParentName="MSBackStory">
+		<defName>MS_Heavensent_Commander</defName>
+		<title>outworld commander</title>
+		<titleShort>commander</titleShort>
+		<description>[PAWN_nameDef] fell from the sky. Once a commander during the decisive battle of [PAWN_possessive] world, [PAWN_pronoun] lost consciousness just before [PAWN_possessive] location was struck by a nuclear strike. Now, [PAWN_nameDef] finds [PAWN_objective]self here on the rim, in a world that feels both familiar and completely different from where [PAWN_pronoun] came.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>10</Melee>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories inherited="False">
+			<li>MSBS_Heavensent</li>
+		</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+</Defs>

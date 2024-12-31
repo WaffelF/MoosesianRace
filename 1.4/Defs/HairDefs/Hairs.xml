@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<StyleItemCategoryDef>
+		<defName>MSHair</defName>
+		<label>Moosesian styles</label>
+	</StyleItemCategoryDef>
+	
+	<HairDef>
+		<defName>MSHair_A</defName>
+		<label>Twin Braids</label>
+		<styleGender>Any</styleGender>
+		<texPath>Moosesian/Hairs/MSHair_A</texPath>
+		<category>MSHair</category>
+		<styleTags>
+		  <li>MSHair</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>MSHair_B</defName>
+		<label>Elder Sister</label>
+		<styleGender>Any</styleGender>
+		<texPath>Moosesian/Hairs/MSHair_B</texPath>
+		<category>MSHair</category>
+		<styleTags>
+		  <li>MSHair</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>MSHair_C</defName>
+		<label>Ancestral</label>
+		<styleGender>Any</styleGender>
+		<texPath>Moosesian/Hairs/MSHair_C</texPath>
+		<category>MSHair</category>
+		<styleTags>
+		  <li>MSHair</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>MSHair_D</defName>
+		<label>Short Cut</label>
+		<styleGender>Any</styleGender>
+		<texPath>Moosesian/Hairs/MSHair_D</texPath>
+		<category>MSHair</category>
+		<styleTags>
+		  <li>MSHair</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>MSHair_E</defName>
+		<label>Low Pigtail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Moosesian/Hairs/MSHair_E</texPath>
+		<category>MSHair</category>
+		<styleTags>
+		  <li>MSHair</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>MSHair_F</defName>
+		<label>Village Maiden</label>
+		<styleGender>Any</styleGender>
+		<texPath>Moosesian/Hairs/MSHair_F</texPath>
+		<category>MSHair</category>
+		<styleTags>
+		  <li>MSHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>MSHair_G</defName>
+		<label>Village Maiden (Wide)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Moosesian/Hairs/MSHair_G</texPath>
+		<category>MSHair</category>
+		<styleTags>
+		  <li>MSHair</li>
+		</styleTags>
+	</HairDef>
+</Defs>

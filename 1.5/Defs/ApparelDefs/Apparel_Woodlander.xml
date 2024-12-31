@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- UNIVERSAL APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_MSBra</defName>
+		<label>Moosesian bra</label>
+		<description>A beautiful pair of bra made from various materials, fitting size for a Moosesian.
+		
+		Different Moosesian come with various size of antlers, all of them are heavy and obstruct their mobility, however, some believe that it wasn't the only thing that weight them down.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_MSBra</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <WorkToMake>2000</WorkToMake>
+		  <Mass>0.20</Mass>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+		  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		  <bodyPartGroups>
+			<li>Torso</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_MSBra</wornGraphicPath>
+		  <layers>
+			<li>OnSkin</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Slave</li>
+			<li>MSC_Colonist</li>
+			<li>MSC_CivilianOutfit</li>
+			<li>MSC_Infirmier</li>
+			<li>MSC_Surgeon</li>
+			<li>MSC_Officer</li>
+			<li>MSC_Warrior</li>
+			<li>MSC_Vanguard</li>
+			<li>MSC_Guard</li>
+			<li>MSC_OldGuard</li>
+			<li>MSC_General</li>
+		  </tags>
+		  <!--<gender>Female</gender>-->
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_MSPanties</defName>
+		<label>Moosesian panties</label>
+		<description>A simple pair of panties made from various materials, fitting size for a Moosesian.
+		
+		In the old times, many Moosesian weren't fond of undergarment and prefer to wear the least clothes they could. nowadays however, it is a norm to always wear one, it is also a casual wear for the less modest of people.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_MSPanties</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <WorkToMake>1600</WorkToMake>
+		  <Mass>0.15</Mass>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+		  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		  <bodyPartGroups>
+			<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_MSPanties</wornGraphicPath>
+		  <layers>
+			<li>OnSkin</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Slave</li>
+			<li>MSC_Colonist</li>
+			<li>MSC_CivilianOutfit</li>
+			<li>MSC_Infirmier</li>
+			<li>MSC_Surgeon</li>
+			<li>MSC_Officer</li>
+			<li>MSC_Warrior</li>
+			<li>MSC_Vanguard</li>
+			<li>MSC_Guard</li>
+			<li>MSC_OldGuard</li>
+			<li>MSC_General</li>
+		  </tags>
+		  <!--<gender>Female</gender>-->
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+	
+	<!-- TIGHT HIGH PANTS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_MSTightPants</defName>
+		<label>Moosesian tight pants</label>
+		<description>A pair of tight, high pants is commonly affiliated with the military type and is often a part of the uniform code. In truth, it is one of the most popular pieces of clothing worn by any Moosesian.
+
+		While these pants can be considered a Moosesian counterpart to what human musketeers used to wear at a certain point in history long lost, they do have a few glaring differences. The fabric is very elastic, causing the pants to adhere tightly to the wearer's skin. The thickness is just enough to keep the wearer warm and allow them to move through bushes and trees without getting scratched.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_MSTightPants</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+		  <MaxHitPoints>200</MaxHitPoints>
+		  <WorkToMake>1600</WorkToMake>
+		  <Mass>0.3</Mass>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+		  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		  <bodyPartGroups>
+			<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_MSTightPants</wornGraphicPath>
+		  <layers>
+			<li>OnSkin</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Slave</li>
+			<li>MSC_Colonist</li>
+			<li>MSC_CivilianOutfit</li>
+			<li>MSC_Infirmier</li>
+			<li>MSC_Surgeon</li>
+			<li>MSC_Officer</li>
+			<li>MSC_Warrior</li>
+			<li>MSC_Vanguard</li>
+			<li>MSC_Guard</li>
+			<li>MSC_OldGuard</li>
+			<li>MSC_General</li>
+		  </tags>
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+	
+	<!-- DOCTOR APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_SurgicalApron</defName>
+		<label>Surgical Apron</label>
+		<description>A clean medical apron for field surgeon. Tending to the wounded have always been bloody task, but it doesn't have to be dirty.
+		
+		Moosesian are no foreigner to the lack of medical personnel, as it has been since the ancient time, their way in medicine were crude and inefficient, it wasn't until long ago that things began to change for the better, but it's all gone now.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_SurgicalApron</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+		  <MaxHitPoints>200</MaxHitPoints>
+		  <WorkToMake>3200</WorkToMake>
+		  <Mass>0.5</Mass>
+		  <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <MedicalTendSpeed>0.2</MedicalTendSpeed>
+		  <MedicalTendQualityOffset>0.1</MedicalTendQualityOffset>
+		  <MedicalOperationSpeed>0.2</MedicalOperationSpeed>
+		  <MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_SurgicalApron</wornGraphicPath>
+		  <layers>
+			<li>Shell</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Surgeon</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_InfirmierUniform</defName>
+		<label>Infirmier uniform</label>
+		<description>A uniform of an 'Infirmier', an ancient word for medic. This set of uniform come with saber scabbard and a haversack for personal belongings, they are given limited loadout to allow better mobility during mission.
+		
+		In the midst of a battle, there will always be an injured who are unable to keep on fighting, these people are the one to carry them back to safety.</description>
+		<recipeMaker>
+		  <researchPrerequisite>MSR_WarriorPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_InfirmierUniform</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>140</Cloth>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>500</MaxHitPoints>
+		  <WorkToMake>12000</WorkToMake>
+		  <Mass>5</Mass>
+		  <Flammability>0.5</Flammability>
+		  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+		  <Insulation_Cold>3</Insulation_Cold>
+		  <Insulation_Heat>3</Insulation_Heat>
+		  <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <MedicalTendSpeed>0.2</MedicalTendSpeed>
+		  <MoveSpeed>0.2</MoveSpeed>
+		  <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		  <SocialImpact>0.10</SocialImpact>
+		  <AimingDelayFactor>-0.1</AimingDelayFactor>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_InfirmierUniform</wornGraphicPath>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Infirmier</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- GENERAL & STAFF APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_GeneralUniform</defName>
+		<label>General uniform</label>
+		<description>A uniform fitting of General, it only take less than second glance to know the rank of anyone wearing this.
+		
+		Moosesian used to have 'Marshal' as the leaders of their army, but in the recent ages, no one has ever been recognized nor worthy enough to hold such title. As such, the generals have been the one holding the army together since then.</description>
+		<recipeMaker>
+		  <researchPrerequisite>MSR_GeneralPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_GeneralUniform</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>140</Cloth>
+		  <Gold>10</Gold>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>500</MaxHitPoints>
+		  <WorkToMake>15000</WorkToMake>
+		  <Mass>5</Mass>
+		  <Flammability>0.5</Flammability>
+		  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+		  <Insulation_Cold>3</Insulation_Cold>
+		  <Insulation_Heat>3</Insulation_Heat>
+		  <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <MentalBreakThreshold>-0.20</MentalBreakThreshold>
+		  <SocialImpact>0.30</SocialImpact>
+		  <AimingDelayFactor>-0.35</AimingDelayFactor>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_GeneralUniform</wornGraphicPath>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_General</li>
+			<li>RoyalTier6</li>
+		  </tags>
+		</apparel>
+	</ThingDef>	
+	
+	<ThingDef ParentName="MS_HatClothing">
+		<defName>WFF_GeneralBicorne</defName>
+		<label>General's bicorne</label>
+		<description>A two cornered hat made for generals, it has distinct ornation from the others in other to make sure the rank and file can recognize their superior
+		
+		This design was taken from the other culture, said to be used by a famous military general of an age long passed.</description>
+		<recipeMaker>
+			<researchPrerequisite>MSR_GeneralPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_GeneralBicorne</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>50</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.50</NegotiationAbility>
+			<SocialImpact>0.50</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_GeneralBicorne</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_General</li>
+			<li>RoyalTier6</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<!--
+	<ThingDef ParentName="MS_HatClothing">
+		<defName>WFF_OfficerBicorne</defName>
+		<label>Officer's bicorne</label>
+		<description>A two cornered hat made for officers whom lead the rank and file , its purpose was to make sure the troops can know who is their commanding officer.
+		
+		The bicorne's design was taken from an army of old whom speak in a strange, foreign tongue.</description>
+		<recipeMaker>
+			<researchPrerequisite>MSR_WarriorPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_OfficerBicorne</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>50</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_OfficerBicorne</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Officer</li>
+			<li>RoyalTier3</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	-->
+	
+	<!-- GRENADIER APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_GuardUniform</defName>
+		<label>Guard uniform</label>
+		<description>A uniform of the Guard, the first and oldest Moosesian fighting forces ever assembled, now a General's greatest allies. Not only does this uniform make them stand out from the crowd, it is to make their enemy knows, they're coming.
+		
+		The mere presence of the guard inspire morals of everyone, because most of the time the guard does not join in to fight the toughest of battles, but to seal the victory and end any hope their enemy has to turn the tide forever.</description>
+		<recipeMaker>
+		  <researchPrerequisite>MSR_GuardPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_GuardUniform</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>140</Cloth>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>500</MaxHitPoints>
+		  <WorkToMake>12000</WorkToMake>
+		  <Mass>5</Mass>
+		  <Flammability>0.5</Flammability>
+		  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+		  <Insulation_Cold>3</Insulation_Cold>
+		  <Insulation_Heat>3</Insulation_Heat>
+		  <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+		  <SocialImpact>0.25</SocialImpact>
+		  <AimingDelayFactor>-0.35</AimingDelayFactor>
+		  <RangedWeapon_Cooldown>-2.5</RangedWeapon_Cooldown>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_GuardUniform</wornGraphicPath>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Guard</li>
+			<li>MSC_OldGuard</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_HatShako">
+		<defName>WFF_GuardShako</defName>
+		<label>Guard shako</label>
+		<description>A tall, cylindrical military cap for the guard, decorated with red and gold to signify decades of fighting, its inner lining hardened with an extra layer of steel, boosting the wearer's confidence as they charge into the thick of battle.
+
+		Popular among the newly promoted, who are experienced enough to know the importance of head protection, yet young enough to not forgo a taste in fashion.</description>
+		<recipeMaker>
+			<researchPrerequisite>MSR_GuardPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_GuardShako</texPath>
+		</graphicData>
+		<costList>
+		  <Steel>45</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>3600</WorkToMake>
+			<Mass>3.75</Mass>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+		  <wornGraphicPath>Apparel/WFF_GuardShako</wornGraphicPath>
+		  <tags>
+			<li>MSC_Guard</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_HatClothing">
+		<defName>WFF_OldGuardBearskin</defName>
+		<label>Old Guard's bearskin</label>
+		<description>A tall fur cap of the Old Guard, the most oldest and meanest of the guards. While it is not much different from the normal bearskin normal guards wore aside from difference in ornation, it is a terrifying sight to see on the battlefield.
+		
+		The minimum requirement for the guard to be 'Old' is to reach the age of thirty-five while having served as a guard for twenty years. Old Guard are beloved by all, and feared by their enemies.</description>
+		<recipeMaker>
+			<researchPrerequisite>MSR_GeneralPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_OldGuardBearskin</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>80</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>230</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.7</Mass>
+			<Flammability>0.7</Flammability>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.2</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_OldGuardBearskin</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_OldGuard</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+  
+	<ThingDef ParentName="MS_HatClothing">
+		<defName>WFF_GuardBearskin</defName>
+		<label>Guard's bearskin</label>
+		<description>A tall fur cap made for the Guard, aesthetically pleasing while also making the wearer seem taller and more intimidating, and such often reserved to the most elite of the army.
+		
+		Many leaders through out history had their own bodyguards which also act as elite troops during war, the current Moosesian guard are a great successor of those.</description>
+		<recipeMaker>
+			<researchPrerequisite>MSR_GuardPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_GuardBearskin</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>80</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>230</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.7</Mass>
+			<Flammability>0.7</Flammability>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_GuardBearskin</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Guard</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- VANGUARD APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_VanguardUniform</defName>
+		<label>Vanguard uniform</label>
+		<description>A uniform of the vanguards, promoted from the ranks of experienced warrior, they act as light infantry and a skirmisher. Unlike most uniform, theirs was made to endure harsh weather. For a newly promoted warriors, this set come with scabbard and a fancy green epaulettes.
+		
+		The vanguards are the eyes and ears of Moosesian force, they always be on the front ahead of all others, seeking out enemy for the army behind them to vanquish. They serve as mentor for the inexperienced young, and have the most casualty rate of all ranks due to being constantly in combat.</description>
+		<recipeMaker>
+		  <researchPrerequisite>MSR_VanguardPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_VanguardUniform</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>160</Cloth>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>550</MaxHitPoints>
+		  <WorkToMake>12500</WorkToMake>
+		  <Mass>7</Mass>
+		  <Flammability>0.5</Flammability>
+		  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+		  <Insulation_Cold>6</Insulation_Cold>
+		  <Insulation_Heat>6</Insulation_Heat>
+		  <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		  <SocialImpact>0.15</SocialImpact>
+		  <AimingDelayFactor>-0.20</AimingDelayFactor>
+		  <RangedWeapon_Cooldown>-1.5</RangedWeapon_Cooldown>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_VanguardUniform</wornGraphicPath>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Vanguard</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+  
+	<ThingDef ParentName="MS_HatShako">
+		<defName>WFF_VanguardShako</defName>
+		<label>Vanguard shako</label>
+		<description>A tall cylindrical military cap, general issue headwear for the vanguard, light infantry branch of the army.
+		
+		The very first thing a promoted warrior get to wear, this fancy hat is a solid proof of their veterancy.</description>
+		<recipeMaker>
+			<researchPrerequisite>MSR_VanguardPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_VanguardShako</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<MoveSpeed>0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+		  <wornGraphicPath>Apparel/WFF_VanguardShako</wornGraphicPath>
+		  <tags>
+			<li>MSC_Vanguard</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	<!--
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_SkirmishUniform</defName>
+		<label>Skirmisher uniform</label>
+		<description>A uniform tailored exclusively for the skirmishers. Utilizing a darker green shade and silver lining, the uniform allows its wearer to stay better undetected under the guise of the forest, while simultaneously being visible enough to avoid friendly fire.
+
+		Unlike other branches of the military, skirmishers are recruited exclusively from hunters who spend most of their lives under the trees and stars. Well profound in their marksmanship and knowledge of the land, the skirmishers are considered a specialist wing of the vanguards.</description>
+		<recipeMaker>
+		  <researchPrerequisite>MSR_VanguardPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_SkirmishUniform</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>160</Cloth>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>550</MaxHitPoints>
+		  <WorkToMake>12500</WorkToMake>
+		  <Mass>7</Mass>
+		  <Flammability>0.5</Flammability>
+		  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+		  <Insulation_Cold>6</Insulation_Cold>
+		  <Insulation_Heat>6</Insulation_Heat>
+		  <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		  <HuntingStealth>0.1</HuntingStealth>
+		  <AimingDelayFactor>-0.20</AimingDelayFactor>
+		  <RangedWeapon_Cooldown>-1.5</RangedWeapon_Cooldown>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_SkirmishUniform</wornGraphicPath>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Skirmish</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	-->
+	<ThingDef ParentName="MS_HatShako">
+		<defName>WFF_SkirmishShako</defName>
+		<label>Skirmish shako</label>
+		<description>A tall cylindrical military cap for the skirmisher, special force of the vanguard, offer no difference in protection but it make anyone feel proud to wear.
+		
+		While they are not as prestigious as the guard, their marksman skills remain unmatched to most of the army.</description>
+		<recipeMaker>
+			<researchPrerequisite>MSR_VanguardPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_SkirmishShako</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<apparel>
+		  <wornGraphicPath>Apparel/WFF_SkirmishShako</wornGraphicPath>
+		  <tags>
+			<li>MSC_Skirmish</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- WARRIOR APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_WarriorUniform</defName>
+		<label>Warrior uniform</label>
+		<description>A uniform of a warrior, standard Moosesian line infantry that make up the majority of Moosesian army, they act as its main combat force and a cannon fodder if need be. Aside from the haversack, they are given an ammunition pouch which contain equipment necessary to operate a firearm.
+		
+		Even after their army has been modernized, the term 'Warrior' never went away. This has a root from their tribalism which is the core of their culture, hence to these days every bottom-line infantry are still called warriors.</description>
+		<recipeMaker>
+		  <researchPrerequisite>MSR_WarriorPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_WarriorUniform</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>140</Cloth>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>500</MaxHitPoints>
+		  <WorkToMake>12000</WorkToMake>
+		  <Mass>5</Mass>
+		  <Flammability>0.5</Flammability>
+		  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+		  <Insulation_Cold>3</Insulation_Cold>
+		  <Insulation_Heat>3</Insulation_Heat>
+		  <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+		  <SocialImpact>0.10</SocialImpact>
+		  <AimingDelayFactor>-0.1</AimingDelayFactor>
+		  <RangedWeapon_Cooldown>-1</RangedWeapon_Cooldown>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_WarriorUniform</wornGraphicPath>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Warrior</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_HatShako">
+		<defName>WFF_WarriorShako</defName>
+		<label>Warrior shako</label>
+		<description>A tall cylindrical military cap, general issue headwear for the warriors, cheap and easy to produce, its elaborated design made it durable against impact despite the simplistic material used.
+		
+		Being rank and file in the army may sound undesirable to some, but many find it an opportunity to gain themselves wealth, fame and glory.</description>
+		<recipeMaker>
+			<researchPrerequisite>MSR_WarriorPath</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_WarriorShako</texPath>
+		</graphicData>
+		<apparel>
+		  <wornGraphicPath>Apparel/WFF_WarriorShako</wornGraphicPath>
+		  <tags>
+			<li>MSC_Warrior</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- LONGMEN APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_MilitiaOutfit</defName>
+		<label>Militia outfit</label>
+		<description>A militia uniform for longman, or as known as the town guards and militia, it come with a cheap great coat and belt holding ammunition box on the back, the protection it gives is subpar from military standard, but it has everything needed for combat.
+		
+		The Longman are local volunteer offering themselves to protect their community from insider and outsider threats. They are called Longman because most of the time their community are unable to supply them with firearms, hence they are often seen carrying cheap 'long' weapons like spear and pike.</description>
+		<graphicData>
+		  <texPath>Apparel/WFF_MilitiaOutfit</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+		  <Cloth>110</Cloth>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>450</MaxHitPoints>
+		  <WorkToMake>8000</WorkToMake>
+		  <Mass>5</Mass>
+		  <Flammability>0.5</Flammability>
+		  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+		  <Insulation_Cold>3</Insulation_Cold>
+		  <Insulation_Heat>3</Insulation_Heat>
+		  <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+		  <SocialImpact>0.05</SocialImpact>
+		  <AimingDelayFactor>-0.05</AimingDelayFactor>
+		  <RangedWeapon_Cooldown>-0.5</RangedWeapon_Cooldown>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_MilitiaOutfit</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_CivilianOutfit</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_HatClothing">
+		<defName>WFF_MilitiaCap</defName>
+		<label>Militia Cap</label>
+		<description>A flat top cap used by Longman, the volunteering town guard and its first line of defense when needed.
+		
+		Most of the longman stay in their own hometown and only leave as a part of caravan's protection. Despite being untrained volunteer, should the threat arrive on their doorstep, they are more than willing to defend their home.</description>
+		<graphicData>
+		  <texPath>Apparel/WFF_MilitiaCap</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+		  <Cloth>35</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.5</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.11</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_MilitiaCap</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_CivilianOutfit</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- FARMER APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_FarmOveralls</defName>
+		<label>Farm Overalls</label>
+		<description>An Overalls for farming in hot season, insulate well against heatwave, it has a pocket to house bunch of small tools so the farmer can do their job easier.
+		
+		The farmers supply the local community with food and supplies. Those who give their yields to the army will gain their protection. Some prefer to live alone and trade with anyone they want.</description>
+		<graphicData>
+		  <texPath>Apparel/WFF_FarmOveralls</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+		  <MaxHitPoints>250</MaxHitPoints>
+		  <WorkToMake>6000</WorkToMake>
+		  <Mass>4</Mass>
+		  <Flammability>0.5</Flammability>
+		  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.10</ArmorRating_Heat>
+		  <Insulation_Cold>3</Insulation_Cold>
+		  <Insulation_Heat>6</Insulation_Heat>
+		  <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <PlantWorkSpeed>0.2</PlantWorkSpeed>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_FarmOveralls</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_CivilianOutfit</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_HatClothing">
+		<defName>WFF_FarmerSunhelm</defName>
+		<label>Sun helmet</label>
+		<description>A sun helmet for farming in summer, used by most outdoor worker who turn their back toward the sun all day long.
+		
+		Unlike most society, farmers are treated with respect by all classes of social hierachy, for they are the hand that feed the town and the army alike.</description>
+		<graphicData>
+		  <texPath>Apparel/WFF_FarmerSunhelm</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <WoodLog>40</WoodLog>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>1</Mass>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.11</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_FarmerSunhelm</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_CivilianOutfit</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- CIVILIAN APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_CeremonialDress</defName>
+		<label>Ceremonial Dress</label>
+		<description>An elegant dress made specifically for public events and other important ceremonies, often made from various kind of materials.
+		
+		Unlike what most would believe, the practice of wearing these fancy dress to ceremonies is in fact, very new.</description>
+		<recipeMaker>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_CeremonialDress</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+		  <MaxHitPoints>150</MaxHitPoints>
+		  <WorkToMake>6000</WorkToMake>
+		  <Mass>0.75</Mass>
+		  <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <NegotiationAbility>0.20</NegotiationAbility>
+		  <SocialImpact>0.20</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_CeremonialDress</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_CivilianOutfit</li>
+			<li>MSC_Colonist</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_HatClothing">
+		<defName>WFF_Flowercrown</defName>
+		<label>Flower crown</label>
+		<description>A crown made out of flowers, often worn during important ceremonies and public events.
+		
+		Nothing is better than the sweet scent of flowers along with the sight of lady in wonderous dress.</description>
+		<recipeMaker>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_Flowercrown</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Heat>1</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.10</NegotiationAbility>
+			 <SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_Flowercrown</wornGraphicPath>
+		  <drawData>
+			<dataNorth>
+			  <layer>-3</layer>
+			</dataNorth>
+		  </drawData>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_CivilianOutfit</li>
+			<li>MSC_Colonist</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_Civilianwear</defName>
+		<label>Civilianwear</label>
+		<description>A tailcoat with trousers, cheap to make, yet eyes pleasing.
+		
+		Moosesian fabrics and leather industry started grew massively in the short time period before the collapse, and this fancy dress that even the most poorest can afford, was the result.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_Civilianwear</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>90</costStuffCount>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+		  <MaxHitPoints>250</MaxHitPoints>
+		  <WorkToMake>7000</WorkToMake>
+		  <Mass>2</Mass>
+		  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>1.0</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_Civilianwear</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_CivilianOutfit</li>
+			<li>MSC_Colonist</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	
+	<!--
+	<ThingDef ParentName="MS_HatClothing">
+		<defName>WFF_CivilianBicorne</defName>
+		<label>Civilian Bicorne</label>
+		<description>A two cornered hat often seen wore by ship captain, but are also popular among civilian as well.
+		
+		One of the more popular headwears due to its cheap cost and stylish design, but most Moosesian like it especially because it doesn't obstruct their antler.</description>
+		<recipeMaker>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_CivilianBicorne</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>50</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			 <SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_CivilianBicorne</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_CivilianOutfit</li>
+			<li>MSC_Colonist</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+	-->
+	
+	<!-- SLAVE APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelSmithing">
+		<defName>WFF_MSSlaveOutfit</defName>
+		<label>Moosesian slave outfit</label>
+		<description>A Moosesian restraint device consists of a chain collar and leg cuffs. While it may not physically restrain a Moosesian from attacking their captor, it is effective in reducing the likelihood of resistance due to its psychological impact. Furthermore, the limited restriction it provides allows the wearer to perform their works without hindrance.
+		
+		Before the unification, various Moosesian tribes and clans lived separately across the land. These isolated communities often fell victim to slavery by foreign invaders seeking to loot and pillage their homes. To protect themselves, a unified force of young recruits from different regions were formed. Later became known as 'the Guard', over time, this little army evolved and grew into the Moosesian military of today, or yesterday, before the collapse tore everything apart, including the military itself.</description>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Apparel/WFF_MSSlaveOutfit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0</Flammability>
+			<StuffEffectMultiplierArmor>1.0</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.5</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<slaveApparel>true</slaveApparel>
+			<wornGraphicPath>Apparel/WFF_MSSlaveOutfit</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+			  <li>Slave</li>
+			</defaultOutfitTags>
+			<tags>
+			<li>MSC_Slave</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+  
+	<!-- NEOLITHIC APPARELS -->	
+	
+	<ThingDef ParentName="MS_ApparelClothing">
+		<defName>WFF_Ancestralwear</defName>
+		<label>Ancestralwear</label>
+		<description>An old-fashioned garment once worn by the Moosesians of eld, is still worn today by the most oldest of elders. Many of whom are old enough to remember the time when this style of clothing was once the norm.
+		
+		The Moosesian social hierarchy is driven entirely by seniority and might. As a Moosesian approaches their prime, their bodily anatomy and strength continue to grow radically. To ensure that those who make it to old age are truly worthy of authority and respect, several trials and challenges have been imposed on the young throughout history, with the most common being warfare.</description>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_Ancestralwear</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<statBases>
+		  <MaxHitPoints>200</MaxHitPoints>
+		  <WorkToMake>2000</WorkToMake>
+		  <Mass>1</Mass>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_Ancestralwear</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers>
+			<li>Middle</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Neolithic</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+  
+	<ThingDef ParentName="MS_HatClothing">
+		<defName>WFF_FurHat</defName>
+		<label>Fur Hat</label>
+		<description>A neolithic headwear wore made from leather of the hunted animal, and later plant fabric.
+		
+		The most oldest kind of headwear ever made, offer excellent insulation in winter. It is still being used to this day by some backward tribes.</description>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+			<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Apparel/WFF_FurHat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Apparel/WFF_FurHat</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>MSC_Neolithic</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+  
+</Defs>

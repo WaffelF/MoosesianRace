@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--NOTE to SELF & TL: Woodland = default, Flatland = Medieval, Imperial = Victorian, Dieselpunk = WW1&2 -->
+	<!--APPAREL BASE-->
+	<ThingDef Name="MS_ApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>18</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Beauty>2</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<apparel>
+		  <tags>
+			<li>MSC_ALL</li>
+		  </tags>
+		</apparel>
+		<tradeTags>
+			<li>MoosesianClothing</li>
+		</tradeTags>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+		</recipeMaker>
+		<thingCategories>
+		  <li>MS_Apparel</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<!--CLOTHING BASE-->
+	<ThingDef Name="MS_ApparelClothing" ParentName="MS_ApparelBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!--CLOTHING HEADGEAR-->
+	<ThingDef Name="MS_HatClothing" ParentName="MS_ApparelClothing" Abstract="True">
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		</apparel>
+		<thingCategories Inherit="False">
+		  <li>MS_Headgear</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="MS_HatShako" ParentName="MS_HatClothing" Abstract="True">
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+		  <Cloth>40</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>1.5</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<!--SMITHING BASE-->
+	<ThingDef Name="MS_ApparelSmithing" ParentName="MS_ApparelBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<smeltable>true</smeltable>
+		<recipeMaker>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!--SMITHING HEADGEAR-->
+	<ThingDef Name="MS_HatSmithing" ParentName="MS_ApparelSmithing" Abstract="True">
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		</apparel>
+		<thingCategories Inherit="False">
+		  <li>MS_Headgear</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<!--MACHINING BASE-->
+	<ThingDef Name="MS_ApparelMachining" ParentName="MS_ApparelBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<smeltable>true</smeltable>
+		<recipeMaker>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<!--MACHINING HEADGEAR-->
+	<ThingDef Name="MS_HatMachining" ParentName="MS_ApparelMachining" Abstract="True">
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		</apparel>
+		<thingCategories Inherit="False">
+			<li>MS_Headgear</li>
+		</thingCategories>
+	</ThingDef>
+  
+</Defs>
