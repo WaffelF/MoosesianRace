@@ -1181,7 +1181,7 @@
 		<graphicData>
 		  <texPath>Apparel/WFF_Civilianwear</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
+		  <!--<shaderType>CutoutComplex</shaderType>-->
 		</graphicData>
 		<costStuffCount>90</costStuffCount>
 		<stuffCategories>
@@ -1208,7 +1208,7 @@
 			<li>Arms</li>
 		  </bodyPartGroups>
 		  <wornGraphicPath>Apparel/WFF_Civilianwear</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <!--<useWornGraphicMask>true</useWornGraphicMask>-->
 		  <layers>
 			<li>Middle</li>
 		  </layers>
